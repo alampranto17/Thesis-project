@@ -12,3 +12,11 @@
 RuntimeError: DataLoader worker (pid(s) 2439, 2440) exited unexpectedly
 
 - 2026-10-11T13:28:07.013595+00:00 [E2] 522 recordings, 29 subjects
+- 2026-10-11T14:05:06.753759+00:00 [T error] cog:core v3 loso_12: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                             "epoch": epoch, "best": best, "history": hist}, t))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_209/3685074688.py", line 7, in atomic_write
+    os.replace(tmp, path)
+    ~~~~~~~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/working/final/cogbci/checkpoints/v3_s0/loso_12/last.pt.tmp' -> '/kaggle/working/final/cogbci/checkpoints/v3_s0/loso_12/last.pt'
+
