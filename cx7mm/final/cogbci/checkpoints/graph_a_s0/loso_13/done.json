@@ -1,0 +1,7 @@
+{
+  "model": "Graph A (+consistency +subject adv)",
+  "fold_id": "loso_13",
+  "val_bal_acc": 0.6944444444444445,
+  "test_bal_acc": 0.5555555555555555,
+  "epochs_trained": 11
+}

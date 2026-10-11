@@ -1,0 +1,7 @@
+{
+  "model": "EEGNet + plain task GRL",
+  "fold_id": "loso_05",
+  "val_bal_acc": 0.513888888888889,
+  "test_bal_acc": 0.6111111111111112,
+  "epochs_trained": 7
+}

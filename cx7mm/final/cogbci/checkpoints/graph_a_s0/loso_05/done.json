@@ -1,0 +1,10 @@
+{
+  "metrics": {
+    "fold_id": "loso_05",
+    "model": "Graph A (+consistency +subject adv)",
+    "best_epoch": 6,
+    "val_bal_acc": 0.5833333333333334,
+    "test_bal_acc": 0.5
+  },
+  "finished": "2026-10-09T18:34:33.942187+00:00"
+}

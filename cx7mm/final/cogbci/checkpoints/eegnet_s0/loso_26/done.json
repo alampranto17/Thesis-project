@@ -1,0 +1,7 @@
+{
+  "model": "EEGNet",
+  "fold_id": "loso_26",
+  "val_bal_acc": 0.5833333333333334,
+  "test_bal_acc": 0.6666666666666666,
+  "epochs_trained": 19
+}

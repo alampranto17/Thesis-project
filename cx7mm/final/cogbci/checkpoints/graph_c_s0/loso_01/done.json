@@ -1,0 +1,7 @@
+{
+  "model": "Graph C (+TCAI)",
+  "fold_id": "loso_01",
+  "val_bal_acc": 0.638888888888889,
+  "test_bal_acc": 0.5,
+  "epochs_trained": 24
+}

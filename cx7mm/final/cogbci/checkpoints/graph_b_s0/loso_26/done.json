@@ -1,0 +1,7 @@
+{
+  "model": "Graph B (+plain task GRL)",
+  "fold_id": "loso_26",
+  "val_bal_acc": 0.6388888888888888,
+  "test_bal_acc": 0.8888888888888888,
+  "epochs_trained": 19
+}
