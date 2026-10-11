@@ -1,0 +1,7 @@
+dataset,level,TLCI,shortcut,train_fit_task_only_bal_acc,train_recordings_per_fold,class_counts_per_fold,nback_share
+COG-BCI sweep,L0_crossed,0.0,0.0,0.3333333333333333,216.0,[72 72 72],0.5
+COG-BCI sweep,L1_correlated,0.3599147425685767,0.22708091983552664,0.6018518518518519,216.0,[72 72 72],0.5
+COG-BCI sweep,L2_collinear,1.0,0.579380164285695,0.6666666666666666,216.0,[72 72 72],0.6666666666666666
+COG-BCI (all recordings),natural,0.0,0.0,,,,
+CMx7-MM,natural (label = rating tertile),0.26382138288480433,0.46560285880335917,,,,
+CMx7-MM,natural (TCAI condition = rating),0.33313414464882724,0.30983503896965064,,,,

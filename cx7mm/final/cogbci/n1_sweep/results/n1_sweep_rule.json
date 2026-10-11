@@ -1,0 +1,55 @@
+{
+  "experiment": "N1 collinearity sweep on COG-BCI",
+  "levels_p_nback_given_level": {
+    "L0_crossed": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "L1_correlated": [
+      0.9,
+      0.5,
+      0.1
+    ],
+    "L2_collinear": [
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  "models": [
+    "eegnet",
+    "eegnet_plain",
+    "eegnet_tcai"
+  ],
+  "base_folds": [
+    "loso_00",
+    "loso_01",
+    "loso_02",
+    "loso_03",
+    "loso_04",
+    "loso_05",
+    "loso_06",
+    "loso_07",
+    "loso_08",
+    "loso_09",
+    "loso_10",
+    "loso_11",
+    "loso_12",
+    "loso_13",
+    "loso_14"
+  ],
+  "gammas_frozen_from_cmx7": {
+    "plain": 0.1,
+    "tcai": 0.3
+  },
+  "test_set": "held-out subject, all recordings (full crossed design)",
+  "metric": "recording-level balanced accuracy per test subject (3 classes, chance 1/3)",
+  "H-S1": "A(L0_crossed) > A(L2_collinear), one-sided Wilcoxon over test subjects, p < alpha (manipulation check)",
+  "H-S2": "C(L1_correlated) > A(L1_correlated), one-sided Wilcoxon, p < alpha (primary N1 test)",
+  "H-S3": "(C - A) at L1 > (C - A) at L2, one-sided Wilcoxon, p < alpha (identifiability shape, secondary)",
+  "verdict": "SUPPORTED = H-S1 and H-S2 (+ shape if H-S3); NOT SUPPORTED = H-S1 met, H-S2 not; UNINFORMATIVE = H-S1 not met",
+  "alpha": 0.05,
+  "honesty_note": "Designed after the CMx7 N1 result (NOT SUPPORTED) was known and while the main COG-BCI benchmark was training (partial training logs visible, E7 not run). Separate experiment; it does not replace the main COG-BCI N1 test.",
+  "saved_utc": "2026-10-11T11:02:24.107552+00:00"
+}
