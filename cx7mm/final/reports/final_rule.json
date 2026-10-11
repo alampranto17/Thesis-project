@@ -1,0 +1,33 @@
+{
+  "rule": {
+    "written_for": "final models of the CMx7-SI-DyGraph thesis on CMx7-MM (LOSO, Sections 9-11 store) and COG-BCI (LOSO)",
+    "models": {
+      "EEGNet": "frozen CMx7 EEGNet, train_global normalisation",
+      "EEGNet + TCAI": "frozen CMx7 TCAI on EEGNet (gamma_tcai_eegnet)",
+      "IG-TCAI (N1-M)": "EEGNet + TCAI with gamma = gamma_tcai_eegnet x (1 - TLCI_fold); TLCI_fold = I(task; c)/H(task) over the fold's TRAINING recordings, c = the TCAI conditioning variable (CMx7: rating 1-9, COG-BCI: level)",
+      "EEGNet + tricks": "EEGNet + Euclidean alignment per subject (label-free, all of that subject's windows) + AdaBN on the test subject (label-free)",
+      "v3 (proposed)": "EEGNet + Euclidean alignment + IG-TCAI + within-task ranking loss (lambda_rank, pairs of the same task only) + AdaBN",
+      "recent models": "ShallowConvNet, EEG-Conformer, CBraMod (frozen probe / fine-tuned), library defaults, same folds and labels"
+    },
+    "transductive_note": "EA and AdaBN use the unlabelled EEG of the test subject (no labels, no ratings); declared in the thesis",
+    "seeds": {
+      "primary": 0,
+      "secondary_ensembles": [
+        1000,
+        2000
+      ]
+    },
+    "lambda_rank": 0.5,
+    "margin": 0.02,
+    "alpha": 0.05,
+    "H-IG-NI (CMx7)": "IG-TCAI is non-inferior to EEGNet: one-sided Wilcoxon over test subjects of (IG - EEGNet + margin) > 0",
+    "H-IG-SUP (COG-BCI)": "IG-TCAI > EEGNet, one-sided Wilcoxon over test subjects",
+    "H-IG-vs-TCAI (CMx7)": "IG-TCAI > TCAI (the gate removes the harm of TCAI under collinearity), one-sided Wilcoxon",
+    "N1-M verdict": "SUPPORTED = H-IG-NI and H-IG-SUP; PARTLY = one of them; NOT SUPPORTED = neither",
+    "H-V3 (both datasets)": "v3 > EEGNet + tricks (our components beyond the tricks), one-sided Wilcoxon, Holm over the two datasets",
+    "H-V3-best": "per dataset: v3 is called 'best' only if it has the highest fold mean AND beats the second best (one-sided, Holm over the comparisons with every other model); otherwise 'comparable with the best'",
+    "CMx7 metric note": "CMx7 accuracy is bounded by the task shortcut (task-only lookup 0.771); within-task rho is reported for every model",
+    "metric": "recording-level balanced accuracy per held-out subject (3 classes, chance 1/3)"
+  },
+  "written_before_training": "2026-10-11T11:01:31.766167+00:00"
+}
