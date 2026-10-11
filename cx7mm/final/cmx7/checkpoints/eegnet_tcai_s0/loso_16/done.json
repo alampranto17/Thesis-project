@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "fold_id": "loso_16",
+    "model": "EEGNet + TCAI",
+    "best_epoch": 1,
+    "val_bal_acc": 0.4929406850459482,
+    "test_bal_acc": 0.2328042328042328,
+    "dataset": "cmx7"
+  },
+  "finished": "2026-10-11T20:47:24.586812+00:00"
+}
