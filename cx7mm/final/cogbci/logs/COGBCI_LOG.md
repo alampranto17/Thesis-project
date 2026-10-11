@@ -11,3 +11,4 @@
     ) from e
 RuntimeError: DataLoader worker (pid(s) 2439, 2440) exited unexpectedly
 
+- 2026-10-11T13:28:07.013595+00:00 [E2] 522 recordings, 29 subjects
