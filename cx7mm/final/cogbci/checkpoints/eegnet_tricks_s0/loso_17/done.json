@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "fold_id": "loso_17",
+    "model": "EEGNet + EA + AdaBN",
+    "best_epoch": 11,
+    "val_bal_acc": 0.5416666666666666,
+    "test_bal_acc": 0.38888888888888884,
+    "dataset": "cog"
+  },
+  "finished": "2026-10-11T13:09:33.115516+00:00"
+}
