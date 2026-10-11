@@ -20,3 +20,4 @@ RuntimeError: DataLoader worker (pid(s) 2439, 2440) exited unexpectedly
     ~~~~~~~~~~^^^^^^^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/working/final/cogbci/checkpoints/v3_s0/loso_12/last.pt.tmp' -> '/kaggle/working/final/cogbci/checkpoints/v3_s0/loso_12/last.pt'
 
+- 2026-10-11T20:20:00.284396+00:00 [E2] 522 recordings, 29 subjects
