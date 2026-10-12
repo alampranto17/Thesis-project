@@ -1,0 +1,83 @@
+{
+  "created": "2026-10-12T17:49:10.782957+00:00",
+  "random_seed": 42,
+  "n_val_subjects": 4,
+  "label_quantiles": [
+    0.3333333333333333,
+    0.6666666666666666
+  ],
+  "subjects": [
+    "sub-001",
+    "sub-002",
+    "sub-003",
+    "sub-004",
+    "sub-005",
+    "sub-006",
+    "sub-007",
+    "sub-008",
+    "sub-009",
+    "sub-010",
+    "sub-011",
+    "sub-012",
+    "sub-013",
+    "sub-014",
+    "sub-015",
+    "sub-016",
+    "sub-017",
+    "sub-018",
+    "sub-019",
+    "sub-020",
+    "sub-021",
+    "sub-022",
+    "sub-023",
+    "sub-024",
+    "sub-025",
+    "sub-026",
+    "sub-027",
+    "sub-028",
+    "sub-029",
+    "sub-030"
+  ],
+  "cross_session_val_subjects": [
+    "sub-008",
+    "sub-017",
+    "sub-026",
+    "sub-030"
+  ],
+  "labelled_recordings": 514,
+  "excluded_recordings": [
+    "sub-011_ses-01_task-passivemotor"
+  ],
+  "checks": {
+    "loso_every_subject_tested_once": true,
+    "loso_subjects_disjoint": true,
+    "loso_val_size": true,
+    "loso_each_subject_val_n_times": true,
+    "every_labelled_recording_once_per_fold": true,
+    "no_recording_in_two_splits": true,
+    "cross_session_test_is_one_session": true,
+    "cross_session_train_val_subjects_disjoint": true,
+    "thresholds_from_training_only": true,
+    "unlabelled_recordings_excluded": true,
+    "labels_in_0_1_2": true,
+    "no_label_in_window_table": true
+  },
+  "task_only_reference": {
+    "cross_session": {
+      "recordings": 514,
+      "pooled_bal_acc": 0.744,
+      "pooled_macro_f1": 0.744,
+      "pooled_acc": 0.747,
+      "fold_bal_acc_mean": 0.744,
+      "fold_bal_acc_sd": 0.052
+    },
+    "loso": {
+      "recordings": 514,
+      "pooled_bal_acc": 0.744,
+      "pooled_macro_f1": 0.744,
+      "pooled_acc": 0.747,
+      "fold_bal_acc_mean": 0.771,
+      "fold_bal_acc_sd": 0.139
+    }
+  }
+}

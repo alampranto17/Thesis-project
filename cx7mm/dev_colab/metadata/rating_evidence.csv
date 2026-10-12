@@ -1,0 +1,10 @@
+source,location,context
+top-level file,README:3,"This repository contains a raw multimodal dataset acquired in healthy adults performing a hierarchy of cognitive, motor, and combined cognitive-motor tasks. Data include neurophysiological (EEG, fNIRS"
+top-level file,README:27,"- Phenotypic / subjective measures (Karolinska Sleepiness Scale, cognitive load ratings, demographics, handedness)"
+top-level file,README:92,Subjective ratings:
+top-level file,README:94,- Karolinska Sleepiness Scale (KSS) before each session
+top-level file,README:95,- Mental load ratings after each task (9-point Likert and visual analogue scale)
+non-subject folder,phenotype/cognitive_load.json,
+non-subject folder,phenotype/cognitive_load.tsv,
+non-subject folder,phenotype/kss_values.json,
+non-subject folder,phenotype/kss_values.tsv,

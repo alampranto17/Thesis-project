@@ -1,0 +1,5 @@
+item,value,reference,p_value
+rhythm task decoder (pooled bal. acc.),0.19,null mean 0.141,0.0099
+EEGNet acc. motor - cognitive (held-out subjects),0.2172,0,0.0132
+EEGNet motor-vs-cognitive probe (validation),0.5412,chance 0.5,0.0
+hypothesis verdict,,SUPPORTED,

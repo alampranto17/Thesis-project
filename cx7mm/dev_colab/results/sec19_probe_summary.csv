@@ -1,0 +1,3 @@
+probe,section18_mean,section19_mean,folds_lower_in_19,wilcoxon_p (descriptive)
+who is it? (person identity),0.925,0.917,20,0.036
+which workload? (new person),0.34,0.356,13,0.205

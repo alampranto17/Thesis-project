@@ -1,0 +1,5 @@
+variant,accuracy,balanced_accuracy,macro_f1,cohen_kappa,fold_bal_acc_mean,fold_bal_acc_sd,one_class_folds,mean_within_task_rho,validation_bal_acc,delta_vs_final,folds_better_than_final,folds_worse_than_final,wilcoxon_p_vs_final
+FINAL model v2 (all components),0.333,0.33,0.319,-0.007,0.349,0.12,12,0.049,0.439,0.0,,,
+− TCAI,0.381,0.371,0.353,0.059,0.382,0.134,7,0.005,0.445,0.034,16.0,8.0,0.353
+− subject adversary,0.321,0.322,0.318,-0.017,0.328,0.108,11,-0.04,0.418,-0.02,9.0,14.0,0.176
+− graph consistency,0.342,0.337,0.334,0.007,0.332,0.114,8,-0.095,0.425,-0.016,12.0,9.0,0.917

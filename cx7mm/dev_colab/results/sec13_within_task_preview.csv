@@ -1,0 +1,8 @@
+task,recordings,spearman_rho_score_vs_rating,accuracy
+task-activemotor,67,-0.293,0.552
+task-full,77,0.011,0.416
+task-mentalarithmetic,76,-0.178,0.263
+task-motorimagery,83,-0.349,0.458
+task-nback,86,-0.14,0.198
+task-nbackarithmetic,73,0.012,0.26
+task-passivemotor,52,-0.298,0.654

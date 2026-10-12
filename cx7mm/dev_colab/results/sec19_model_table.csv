@@ -1,0 +1,8 @@
+model,fold_mean
+task name only (no EEG),0.771
+Temporal CNN,0.407
+EEGNet,0.452
+Fixed-graph GCN,0.423
+Dynamic graph (Section 17),0.41
+"+ graph consistency (Section 18, λ=1)",0.424
+"+ subject-adversarial (Section 19, β=0.1)",0.41

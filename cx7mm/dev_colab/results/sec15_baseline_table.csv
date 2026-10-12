@@ -1,0 +1,5 @@
+model,parameters,fold_mean
+task name only (no EEG),0,0.771
+Temporal CNN,78699,0.407
+EEGNet,3595,0.452
+Fixed-graph GCN,81931,0.423

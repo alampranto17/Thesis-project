@@ -1,0 +1,11 @@
+subject,session,task,sidecar
+sub-006,ses-03,task-motorimagery,events.tsv
+sub-007,ses-02,task-activemotor,"channels.tsv,events.tsv"
+sub-008,ses-01,task-motorimagery,events.tsv
+sub-008,ses-01,task-nback,events.tsv
+sub-014,ses-02,task-activemotor,"channels.tsv,events.tsv"
+sub-014,ses-03,task-activemotor,"channels.tsv,events.tsv"
+sub-022,ses-02,task-activemotor,"channels.tsv,events.tsv"
+sub-024,ses-03,task-activemotor,"channels.tsv,events.tsv"
+sub-028,ses-02,task-activemotor,"channels.tsv,events.tsv"
+sub-030,ses-02,task-activemotor,"channels.tsv,events.tsv"

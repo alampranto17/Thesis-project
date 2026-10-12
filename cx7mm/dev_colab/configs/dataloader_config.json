@@ -1,0 +1,101 @@
+{
+  "primary_subject_set": "all",
+  "batch_size": 64,
+  "num_workers": 2,
+  "train_windows_per_recording": 16,
+  "val_windows_per_recording": 32,
+  "test_windows": "all valid",
+  "subject_index": {
+    "sub-001": 0,
+    "sub-002": 1,
+    "sub-003": 2,
+    "sub-004": 3,
+    "sub-005": 4,
+    "sub-006": 5,
+    "sub-007": 6,
+    "sub-008": 7,
+    "sub-009": 8,
+    "sub-010": 9,
+    "sub-011": 10,
+    "sub-012": 11,
+    "sub-013": 12,
+    "sub-014": 13,
+    "sub-015": 14,
+    "sub-016": 15,
+    "sub-017": 16,
+    "sub-018": 17,
+    "sub-019": 18,
+    "sub-020": 19,
+    "sub-021": 20,
+    "sub-022": 21,
+    "sub-023": 22,
+    "sub-024": 23,
+    "sub-025": 24,
+    "sub-026": 25,
+    "sub-027": 26,
+    "sub-028": 27,
+    "sub-029": 28,
+    "sub-030": 29
+  },
+  "session_index": {
+    "ses-01": 0,
+    "ses-02": 1,
+    "ses-03": 2
+  },
+  "loader_test": {
+    "train_global": {
+      "batch_x": [
+        64,
+        32,
+        1000
+      ],
+      "dtype": "torch.float32",
+      "finite": true,
+      "batch_mean": -0.001,
+      "batch_std": 0.972,
+      "labels": [
+        0,
+        1,
+        2
+      ],
+      "windows_per_s": 225,
+      "train/val/test windows per epoch": [
+        6896,
+        2016,
+        1729
+      ],
+      "train/val/test recordings": [
+        431,
+        63,
+        20
+      ]
+    },
+    "recording_scaled": {
+      "batch_x": [
+        64,
+        32,
+        1000
+      ],
+      "dtype": "torch.float32",
+      "finite": true,
+      "batch_mean": -0.001,
+      "batch_std": 0.941,
+      "labels": [
+        0,
+        1,
+        2
+      ],
+      "windows_per_s": 1912,
+      "train/val/test windows per epoch": [
+        6896,
+        2016,
+        1729
+      ],
+      "train/val/test recordings": [
+        431,
+        63,
+        20
+      ]
+    }
+  }
+}

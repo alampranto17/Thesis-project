@@ -1,0 +1,7 @@
+mode,fold_id,val_rec_bal_acc,best_epoch,epochs_run
+train_global,loso_00,0.46878787878787875,0,7
+train_global,loso_01,0.4070377092155677,1,8
+train_global,loso_02,0.5532708032708032,7,14
+recording_scaled,loso_00,0.45515151515151514,3,10
+recording_scaled,loso_01,0.37121059353364255,4,11
+recording_scaled,loso_02,0.5227272727272728,9,16

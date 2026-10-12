@@ -1,0 +1,6 @@
+model,accuracy,balanced_accuracy,macro_f1,cohen_kappa,fold_bal_acc_mean,fold_bal_acc_sd,one_class_folds,mean_within_task_rho
+EEGNet,0.463,0.459,0.448,0.19,0.452,0.153,8,-0.041
+v1 seed 0,0.354,0.355,0.35,0.031,0.333,0.105,17,-0.188
+v1 seed ensemble,0.329,0.325,0.323,-0.012,0.324,0.081,17,-0.158
+v2 subject_zscore,0.333,0.33,0.319,-0.007,0.349,0.12,12,0.049
+v2 subject_euclid,0.329,0.337,0.307,0.004,0.324,0.097,11,-0.214

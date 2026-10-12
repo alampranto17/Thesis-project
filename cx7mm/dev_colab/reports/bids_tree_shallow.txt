@@ -1,0 +1,25 @@
+CMx7-MM_dataset/
+├── CHANGES
+├── README
+├── dataset_description.json
+├── eeg.json
+├── nirs.json
+├── participants.json
+├── participants.tsv
+├── task-activemotor_events.json
+├── task-full_events.json
+├── task-mentalarithmetic_events.json
+├── task-motorimagery_events.json
+├── task-nback_events.json
+├── task-nbackarithmetic_events.json
+├── task-passivemotor_events.json
+├── phenotype/
+├── sub-001/
+│   ├── ses-01/  -> ['beh', 'eeg', 'nirs']
+│   ├── ses-02/  -> ['beh', 'eeg', 'nirs']
+│   ├── ses-03/  -> ['beh', 'eeg', 'nirs']
+├── sub-002/
+│   ├── ses-01/  -> ['beh', 'eeg', 'nirs']
+│   ├── ses-02/  -> ['beh', 'eeg', 'nirs']
+│   ├── ses-03/  -> ['beh', 'eeg', 'nirs']
+└── ... 30 subject folders in total

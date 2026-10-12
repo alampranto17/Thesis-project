@@ -1,0 +1,10 @@
+task,peak_period_s,peak_comb_score,kind,decoder,pooled_bal_acc,fold_mean_bal_acc,chance
+task-activemotor,2.05,0.1254,peak,,,,
+task-full,1.55,0.1144,peak,,,,
+task-mentalarithmetic,1.55,0.1159,peak,,,,
+task-motorimagery,2.05,0.1623,peak,,,,
+task-nback,2.05,0.163,peak,,,,
+task-nbackarithmetic,1.55,0.1151,peak,,,,
+task-passivemotor,2.05,0.2226,peak,,,,
+,,,decoder,task from rhythm only (7 classes),0.19,0.196,0.143
+,,,decoder,workload label from rhythm only (3 classes),0.329,0.328,0.333

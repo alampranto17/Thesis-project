@@ -1,0 +1,6 @@
+component,measure,final_model,EEGNet,reference
+1 task-only baseline,fold-mean balanced accuracy minus task-only,-0.422,-0.319,task-only 0.771
+2 within-task agreement,mean Spearman ρ over 5 eligible tasks,0.049,-0.041,0 = no tracking
+3 within-task permutation,fold-mean bal. acc.: permuted minus true training labels,0.0,-0.014,≈0 -> task-level shortcut
+4 conditional task probe,task within workload class (validation embeddings),0.204,,chance ≈ 0.23
+5 stimulus rhythm,task decodable from rhythm-only features (bal. acc.),,,0.190 (chance 0.143)

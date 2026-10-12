@@ -1,0 +1,3 @@
+backbone,macro_f1_A,macro_f1_B,macro_f1_C,rho_A,rho_B,rho_C,rho_C_minus_B_95CI,C1_macroF1_C>=B,C2_rho_C>=B
+EEGNet,0.46,0.463,0.476,0.132,0.136,0.124,"(-0.055, 0.042)",True,False
+graph,0.475,0.468,0.457,0.205,0.149,0.166,"(-0.091, 0.122)",False,True

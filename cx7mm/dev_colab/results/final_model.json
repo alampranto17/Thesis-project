@@ -1,0 +1,16 @@
+{
+  "version": "v2",
+  "alignment": "subject_zscore",
+  "mode": "subject_zscore",
+  "experiment": "full_v2_subject_zscore_g0.3_b0.1_l1",
+  "fp_base": "622c227cf2be:l1:b0.1:g0.3:alignd63e00b0946b",
+  "validation_means": {
+    "v1 (no alignment, seed 0)": 0.4156,
+    "v2 subject_zscore": 0.4387,
+    "v2 subject_euclid": 0.3991
+  },
+  "lambda": 1.0,
+  "beta": 0.1,
+  "gamma": 0.3,
+  "seed_offset": 0
+}

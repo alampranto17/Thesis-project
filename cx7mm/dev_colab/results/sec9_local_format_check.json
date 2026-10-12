@@ -1,0 +1,5 @@
+{
+  "npy_memmap_ms_per_window": 0.164,
+  "hdf5_ms_per_window": 0.351,
+  "windows_read": 300
+}

@@ -1,0 +1,68 @@
+{
+  "recording": "sub-001_ses-01_task-nback",
+  "n_components": 31,
+  "numeric_rank": 31,
+  "fit_seconds": 1.0,
+  "n_iter": 116,
+  "excluded": [
+    1,
+    2
+  ],
+  "eog_components": [
+    1,
+    2
+  ],
+  "ecg_components": [],
+  "ecg_info": {
+    "available": true,
+    "file": "sub-001/ses-01/beh/sub-001_ses-01_task-nback_recording-ECG_physio.tsv.gz",
+    "sfreq_ecg": 1882.453362622982,
+    "start_time_s": 0.0,
+    "ecg_duration_s": 215.0,
+    "eeg_duration_s": 216.0,
+    "average_pulse_bpm": 72.9,
+    "n_r_peaks": 260,
+    "best_component": 0,
+    "best_component_ctps": 0.235,
+    "alignment_lag_s": 0.476,
+    "alignment_corr": 0.052
+  },
+  "variance_removed": {
+    "frontal_median_pct": 91.29,
+    "other_median_pct": 44.43,
+    "other_max_pct": 76.08
+  },
+  "checks": {
+    "same_shape_as_minimal": true,
+    "same_channels_and_order": true,
+    "all_values_finite": true,
+    "excluded_within_cap": true,
+    "every_exclusion_has_a_reason": true,
+    "minimal_stays_primary": true
+  },
+  "data_flags": {
+    "ica_converged": true,
+    "eye_component_found": true,
+    "ecg_available": true,
+    "heart_component_found": false,
+    "pulse_plausible_40_120bpm": true,
+    "ecg_alignment_lag_below_0.1s": false,
+    "not_capped": true,
+    "non_frontal_change_below_20pct": false
+  },
+  "config_used": {
+    "ica_method": "infomax",
+    "ica_extended": true,
+    "ica_decim": 2,
+    "ica_eog_channels": [
+      "FP1",
+      "FP2"
+    ],
+    "ica_eog_threshold": 3.0,
+    "ica_ecg_method": "ctps",
+    "ica_max_excluded_components": 8,
+    "ica_ecg_max_lag_s": 1.0,
+    "ica_eog_min_abs_corr": 0.3,
+    "ica_max_iter": 1000
+  }
+}

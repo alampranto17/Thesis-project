@@ -1,0 +1,5 @@
+model,accuracy_low_or_median_KSS,accuracy_high_KSS,recordings
+task name only (no EEG),0.768,0.699,508
+EEGNet,0.458,0.479,508
+EEGNet + TCAI,0.449,0.546,508
+Final model v2,0.397,0.374,508

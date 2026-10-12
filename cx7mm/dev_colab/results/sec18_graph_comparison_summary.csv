@@ -1,0 +1,6 @@
+metric,section17_mean,section18_mean,folds_lower_in_18,wilcoxon_p (descriptive)
+graph_subject_share,0.953,0.933,26,0.0
+subject_separation_vs_chance,11.344,8.648,27,0.0
+workload_separation_vs_chance,4.532,3.961,23,0.003
+jaccard_same_recording,0.559,0.585,11,0.011
+jaccard_different_subjects,0.355,0.454,7,0.0

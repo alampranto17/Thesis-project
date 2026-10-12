@@ -1,0 +1,4 @@
+model,accuracy,balanced_accuracy,macro_f1,cohen_kappa,fold_bal_acc_mean,fold_bal_acc_sd,one_class_folds,mean_within_task_rho,within_task_rho_CI
+A EEGNet,0.463,0.459,0.448,0.19,0.452,0.153,8,-0.041,
+B EEGNet + plain GRL,0.463,0.459,0.45,0.189,0.459,0.153,10,-0.076,
+C EEGNet + TCAI,0.446,0.443,0.428,0.165,0.421,0.165,11,-0.092,"(-0.149, 0.108)"

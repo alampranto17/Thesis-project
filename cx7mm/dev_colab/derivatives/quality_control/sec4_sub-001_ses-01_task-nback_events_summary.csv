@@ -1,0 +1,4 @@
+trial_type,n,first_onset_s,last_onset_s,duration_values,median_interval_s
+start,1,25.0,25.0,[0.5],
+target,18,39.5,204.5,[0.5],7.5
+trigger,102,26.0,203.0,[0.5],1.5

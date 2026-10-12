@@ -1,0 +1,5 @@
+model,parameters_at_prediction
+EEGNet,3595
+Temporal CNN / graph models (flatten head),78699
+"Dynamic graph models, Sections 17-20 (flatten head)",83052
+Full model (attention pooling),27328

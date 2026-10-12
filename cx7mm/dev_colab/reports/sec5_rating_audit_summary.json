@@ -1,0 +1,33 @@
+{
+  "n_rating_rows": 30,
+  "n_rating_cells": 630,
+  "n_missing_ratings": 15,
+  "n_usable_labelled_recordings": 514,
+  "n_eeg_without_rating": 1,
+  "n_ratings_without_eeg": 101,
+  "full_equals_mean_share": 0.0,
+  "full_corr_with_mean": 0.4024787527404156,
+  "variance_explained": {
+    "task only": 0.765,
+    "subject only": 0.0662,
+    "session only": 0.0006,
+    "task + subject": 0.8348,
+    "task + subject + session": 0.8357
+  },
+  "checks": {
+    "long_rows_equal_wide_cells": true,
+    "no_duplicate_subject_session_task": true,
+    "all_tasks_mapped": "True",
+    "ratings_inside_scale": true,
+    "join_counts_add_up": true,
+    "every_strategy_labels_every_recording": true
+  },
+  "data_flags": {
+    "every_eeg_recording_has_rating": false,
+    "no_non_numeric_ratings": true,
+    "full_column_is_a_task_rating": true,
+    "S1_task_confound_below_limit": false,
+    "S1_no_class_below_min_share": true,
+    "task_explains_less_than_half_of_rating": false
+  }
+}

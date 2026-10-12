@@ -1,0 +1,332 @@
+{
+  "project_root": "/content/drive/MyDrive/CMx7_SI_DyGraph",
+  "dataset_source_mode": "drive_path",
+  "dataset_drive_path": "/content/drive/MyDrive/CMx7-MM_dataset",
+  "demo_dataset_path": "/content/drive/MyDrive/CMx7_MM_Demo",
+  "shared_drive_link": "https://drive.google.com/drive/folders/1kIAmVPjQzxKuFvBGw9gM92zoQAYyHm_K",
+  "use_demo_data": false,
+  "expected_sfreq": 250,
+  "expected_eeg_channels": 32,
+  "expected_n_subjects": 30,
+  "expected_n_sessions": 3,
+  "expected_n_tasks": 7,
+  "highpass_hz": 1.0,
+  "lowpass_hz": 40.0,
+  "notch_hz": 50.0,
+  "apply_notch": false,
+  "reference": "average",
+  "window_seconds": 4.0,
+  "step_seconds": 2.0,
+  "transition_exclusion_seconds": 3.0,
+  "preprocessing_mode": "minimal",
+  "random_seed": 42,
+  "force_rescan": false,
+  "force_rebuild_sidecar_audit": false,
+  "sample_subject": "sub-001",
+  "audit_session": "ses-01",
+  "audit_task": "task-nback",
+  "audit_segment_start_s": 30.0,
+  "audit_segment_seconds": 10.0,
+  "sfreq_tolerance_hz": 0.01,
+  "psd_fmax_hz": 120.0,
+  "qc_flat_std_uv": 0.5,
+  "qc_noisy_robust_z": 5.0,
+  "qc_min_median_corr": 0.4,
+  "qc_line_noise_db_threshold": 10.0,
+  "task_duration_seconds": 180.0,
+  "rating_file": "phenotype/cognitive_load.tsv",
+  "kss_file": "phenotype/kss_values.tsv",
+  "rating_scale_min": 1,
+  "rating_scale_max": 9,
+  "rating_task_map": {
+    "Nback": "task-nback",
+    "Arithmetic": "task-mentalarithmetic",
+    "MotorImagery": "task-motorimagery",
+    "PassiveMotor": "task-passivemotor",
+    "NbackArithmetic": "task-nbackarithmetic",
+    "ActiveMotor": "task-activemotor",
+    "Full": "task-full"
+  },
+  "label_fixed_bins": {
+    "low": [
+      1,
+      3
+    ],
+    "medium": [
+      4,
+      6
+    ],
+    "high": [
+      7,
+      9
+    ]
+  },
+  "label_binary_high_min": 6,
+  "label_task_confound_max_v": 0.5,
+  "label_min_class_share": 0.1,
+  "label_strategy": "loso_train_tertiles",
+  "montage_candidates": [
+    "colin27_1020",
+    "standard_1020"
+  ],
+  "ocular_channels": [
+    "FP1",
+    "FP2",
+    "F7",
+    "F8"
+  ],
+  "bad_hf_noise_robust_z": 5.0,
+  "bad_channel_min_indicators": 2,
+  "max_interpolated_channels": 3,
+  "artifact_segment_seconds": 1.0,
+  "severe_artifact_ptp_uv": 500.0,
+  "flat_segment_ptp_uv": 1.0,
+  "comb_harmonics_max_hz": 40.0,
+  "ica_method": "infomax",
+  "ica_extended": true,
+  "ica_decim": 2,
+  "ica_eog_channels": [
+    "FP1",
+    "FP2"
+  ],
+  "ica_eog_threshold": 3.0,
+  "ica_eog_min_abs_corr": 0.3,
+  "ica_max_iter": 1000,
+  "ica_ecg_method": "ctps",
+  "ica_ecg_max_lag_s": 1.0,
+  "ica_max_excluded_components": 8,
+  "ica_use_ecg": false,
+  "window_samples": 1000,
+  "step_samples": 500,
+  "anchor_reference_tasks": {
+    "task-motorimagery": [
+      "task-activemotor",
+      "task-passivemotor"
+    ]
+  },
+  "anchor_max_last_event_overrun_s": 5.0,
+  "demo_n_subjects": 3,
+  "stim_locked_tmin_s": -0.2,
+  "stim_locked_tmax_s": 1.0,
+  "drive_min_free_gb_margin": 0.5,
+  "anchor_start_tolerance_s": 0.5,
+  "amplitude_ratio_flag": 4.0,
+  "store_benchmark_n_recordings": 12,
+  "store_benchmark_n_windows": 300,
+  "store_unit": "uV",
+  "build_full_store": false,
+  "force_refit_ica": false,
+  "loso_n_val_subjects": 4,
+  "label_quantiles": [
+    0.3333333333333333,
+    0.6666666666666666
+  ],
+  "subject_amplitude_ratio_flag": 4.0,
+  "norm_modes": [
+    "train_global",
+    "recording_scaled"
+  ],
+  "norm_std_floor": 1e-06,
+  "quantization_share_max": 0.25,
+  "psd_nperseg_seconds": 2.0,
+  "local_store_dir": "/content/cmx7_store",
+  "copy_workers": 2,
+  "batch_size": 64,
+  "num_workers": 2,
+  "train_windows_per_recording": 16,
+  "val_windows_per_recording": 32,
+  "tcnn_branch_kernels": [
+    11,
+    25,
+    51
+  ],
+  "tcnn_branch_filters": 8,
+  "tcnn_hidden": 32,
+  "tcnn_embedding": 64,
+  "tcnn_dropout": 0.3,
+  "train_max_epochs": 30,
+  "train_patience": 6,
+  "train_lr": 0.001,
+  "train_weight_decay": 0.01,
+  "train_amp": true,
+  "mode_selection_folds": 3,
+  "max_loso_folds": null,
+  "allow_cpu_training": false,
+  "session_budget_minutes": 150,
+  "eegnet_F1": 8,
+  "eegnet_D": 2,
+  "eegnet_F2": 16,
+  "eegnet_kernel_1": 125,
+  "eegnet_kernel_2": 16,
+  "eegnet_dropout": 0.25,
+  "gcn_k_neighbours": 4,
+  "gcn_layers": 2,
+  "gcn_hidden": 32,
+  "static_graph_topk": 6,
+  "static_graph_l1": 0.001,
+  "static_graph_init": "knn",
+  "dyn_graph_topk": 6,
+  "dyn_graph_dim": 16,
+  "dyn_graph_prior": "knn",
+  "graph_consistency_weights": [
+    0.1,
+    0.3,
+    1.0
+  ],
+  "subject_adv_weights": [
+    0.1,
+    0.3,
+    1.0
+  ],
+  "subject_adv_warmup_steps": 500,
+  "subject_adv_hidden": 64,
+  "task_adv_weights": [
+    0.1,
+    0.3,
+    1.0
+  ],
+  "task_adv_warmup_steps": 500,
+  "task_adv_hidden": 64,
+  "tcai_rating_levels": 9,
+  "within_task_min_rating_sd": 1.0,
+  "attn_pool_heads": 4,
+  "attn_pool_dim": 16,
+  "full_model_seed_offsets": [
+    0,
+    1000,
+    2000
+  ],
+  "alignment_candidates": [
+    "subject_zscore",
+    "subject_euclid"
+  ],
+  "euclid_eig_floor": 0.001,
+  "probe_windows_per_recording": 8,
+  "permutation_seed": 7777,
+  "rhythm_period_min_s": 0.8,
+  "rhythm_period_max_s": 12.0,
+  "rhythm_n_periods": 225,
+  "rhythm_fmax_hz": 12.0,
+  "rhythm_welch_seconds": 20.0,
+  "n1_ci_level": 0.95,
+  "ablations_to_run": [
+    "no_tcai",
+    "no_subject_adv",
+    "no_graph_consistency"
+  ],
+  "sensitivity_runs": [
+    "eegnet_recording_scaled",
+    "final_recording_scaled"
+  ],
+  "rhythm_n_permutations": 100,
+  "task_groups": {
+    "motor": [
+      "task-activemotor",
+      "task-passivemotor",
+      "task-motorimagery"
+    ],
+    "cognitive": [
+      "task-mentalarithmetic",
+      "task-nback",
+      "task-nbackarithmetic"
+    ],
+    "cognitive_motor": [
+      "task-full"
+    ]
+  },
+  "xai_windows_per_recording": 6,
+  "xai_ig_steps": 16,
+  "xai_bands": {
+    "delta": [
+      1,
+      4
+    ],
+    "theta": [
+      4,
+      8
+    ],
+    "alpha": [
+      8,
+      13
+    ],
+    "beta": [
+      13,
+      30
+    ],
+    "gamma": [
+      30,
+      40
+    ]
+  },
+  "xai_regions": {
+    "frontal_polar_eye": [
+      "FP1",
+      "FP2",
+      "F7",
+      "F8"
+    ],
+    "frontal": [
+      "F3",
+      "Fz",
+      "F4"
+    ],
+    "temporal_emg": [
+      "FT7",
+      "FT8",
+      "T7",
+      "T8",
+      "TP7",
+      "TP8"
+    ],
+    "central_motor": [
+      "FC3",
+      "FC4",
+      "C1",
+      "Cz",
+      "C2",
+      "C3",
+      "C4",
+      "CP1",
+      "CP2"
+    ],
+    "parietal_occipital": [
+      "P7",
+      "P3",
+      "Pz",
+      "P4",
+      "P8",
+      "PO7",
+      "PO3",
+      "PO4",
+      "PO8",
+      "Oz"
+    ]
+  },
+  "xai_shortcut_ratio": 1.5,
+  "xai_deletion_steps": [
+    0,
+    4,
+    8,
+    16,
+    24
+  ],
+  "stats_alpha": 0.05,
+  "stats_n_bootstrap": 10000,
+  "stats_rho_bootstrap": 1000,
+  "project_subfolders": [
+    "configs",
+    "metadata",
+    "cache",
+    "derivatives/minimal",
+    "derivatives/ica_cleaned",
+    "derivatives/window_metadata",
+    "derivatives/normalization",
+    "derivatives/quality_control",
+    "derivatives/arrays",
+    "checkpoints",
+    "logs",
+    "results",
+    "figures",
+    "reports"
+  ]
+}

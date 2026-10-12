@@ -1,0 +1,4 @@
+model,mean_within_task_rho_score_vs_KSS,tasks,data_rho_rating_kss
+task name only (no EEG),,0,-0.055703085607359516
+EEGNet,-0.095,7,-0.055703085607359516
+Final model v2,-0.058,7,-0.055703085607359516

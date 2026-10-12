@@ -1,0 +1,14 @@
+claim,statement,evidence,verdict
+N3a LOSO benchmark,14 EEG models on identical 30-subject LOSO folds,"best EEG model EEGNet + plain GRL 0.459 [0.407, 0.515]; 8/14 above chance after Holm; Friedman p 1.52e-18",DELIVERED
+N3b cross-session benchmark,"same models, unseen session of known people",best EEG model Graph A (+consistency +subject adv) 0.444; task-only 0.771,DELIVERED
+N2-1 task-only reference,EEG models do not exceed a no-EEG task lookup,task-only 0.771; 14/14 EEG models significantly below it (Holm),SUPPORTED
+N2-2 within-task agreement,no LOSO model tracks the rating inside a task,models with within-task ρ CI above 0: none,SUPPORTED
+N2-3 within-task permutation,EEGNet's accuracy survives shuffling the ratings inside each task (task-level),"Δ -0.014 [-0.079, +0.046], r_rb +0.00, p_Holm 1",SUPPORTED
+N2-5 stimulus rhythm,stimulus timing carries a task cue,"rhythm decoder 0.190 vs null 0.141, permutation p 0.0099",SUPPORTED (weak cue)
+RQ1 EEGNet mechanism,"EEGNet mainly separates motor from cognitive tasks (pre-registered, 22C)",22C H-a probe and H-b accuracy,SUPPORTED
+"N1 TCAI, EEGNet LOSO",TCAI beats plain GRL (pre-registered C1-C3),"verdict NOT SUPPORTED; Δ -0.038 [-0.083, +0.003], r_rb -0.44, p_Holm 0.763",NOT SUPPORTED
+"N1 TCAI, graph LOSO",TCAI improves the graph model,"vs plain GRL Δ -0.041 [-0.086, -0.004], r_rb -0.53, p_Holm 0.486; removing TCAI from the final model Δ +0.034 [-0.032, +0.100], r_rb +0.22, p_Holm 1",NOT SUPPORTED
+"N1 TCAI, cross-session",TCAI >= plain GRL on macro-F1 and within-task ρ,"EEGNet: C1 True, C2 False, ρ C-B CI (-0.055, 0.042); graph: C1 False, C2 True, ρ C-B CI (-0.091, 0.122)",NOT SUPPORTED
+Subject adversary,removing the subject adversary lowers accuracy,"Δ -0.020 [-0.064, +0.026], r_rb -0.32, p_Holm 1",NOT SUPPORTED (direction only)
+Normalisation is not the cause,recording_scaled input does not change the conclusions (D-027),"Δ -0.033 [-0.092, +0.021], r_rb -0.20, p_Holm 1 | Δ +0.009 [-0.060, +0.077], r_rb +0.11, p_Holm 1",SUPPORTED
+Artefact shortcut audit,models do not rely on EMG / eye regions (25),"EEGNet: EMG warning False, eye warning False, top band delta; Final model v2: EMG warning False, eye warning False, top band beta",NO WARNING

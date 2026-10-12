@@ -1,0 +1,32 @@
+{
+  "rows": 30,
+  "columns": [
+    "participant_id",
+    "age",
+    "sex",
+    "hand"
+  ],
+  "missing_values_per_column": {
+    "participant_id": 0,
+    "age": 11,
+    "sex": 0,
+    "hand": 0
+  },
+  "sex_counts": {
+    "F": 18,
+    "M": 12
+  },
+  "hand_counts": {
+    "R": 30
+  },
+  "age_summary": {
+    "count": 19.0,
+    "mean": 25.53,
+    "std": 5.4,
+    "min": 21.0,
+    "25%": 22.5,
+    "50%": 23.0,
+    "75%": 26.5,
+    "max": 40.0
+  }
+}

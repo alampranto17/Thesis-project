@@ -1,0 +1,35 @@
+{
+  "paired": {
+    "bal_acc C vs B: folds better / worse": [
+      6,
+      13
+    ],
+    "wilcoxon p bal_acc C vs B": 0.0442,
+    "wilcoxon p macro-F1 C vs B": 0.2919,
+    "wilcoxon p bal_acc C vs A": 0.0007,
+    "wilcoxon p macro-F1 C vs A": 0.0143,
+    "within-task \u03c1 C-B: 95% bootstrap CI over subjects": [
+      -0.021,
+      0.347
+    ],
+    "within-task \u03c1 C-A: 95% bootstrap CI over subjects": [
+      -0.099,
+      0.21
+    ]
+  },
+  "criterion": {
+    "TCAI >= plain GRL on pooled macro-F1": true,
+    "TCAI >= plain GRL on mean within-task \u03c1": true
+  },
+  "gamma": {
+    "plain": 0.1,
+    "tcai": 0.3
+  },
+  "eligible_tasks": [
+    "task-full",
+    "task-mentalarithmetic",
+    "task-motorimagery",
+    "task-nback",
+    "task-nbackarithmetic"
+  ]
+}

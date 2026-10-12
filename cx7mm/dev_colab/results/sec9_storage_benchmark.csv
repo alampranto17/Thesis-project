@@ -1,0 +1,4 @@
+format,size_mb,write_s,read_300_windows_s,ms_per_window,lazy_reads,exact
+npy (memmap),67.59,1.36,8.865,29.55,True,True
+hdf5 (chunked),67.62,1.64,0.926,3.09,True,True
+npz (compressed),61.28,12.69,39.922,133.07,False,True

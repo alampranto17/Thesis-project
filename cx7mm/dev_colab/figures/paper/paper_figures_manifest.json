@@ -1,0 +1,411 @@
+{
+  "generated_utc": "2026-10-12T18:44:38.696386+00:00",
+  "style": {
+    "paper_fig_dpi": 300,
+    "paper_font_pt": 8,
+    "paper_single_col_in": 3.5,
+    "paper_double_col_in": 7.16,
+    "paper_graph_top_edges": 25,
+    "paper_bootstrap": 2000
+  },
+  "palette": {
+    "eegnet": "#2a78d6",
+    "graph": "#eb6834",
+    "final": "#1baf7a",
+    "reference": "#52514e",
+    "no_adv": "#52514e",
+    "plain": "#6250d6",
+    "tcai": "#1baf7a",
+    "pos": "#2a78d6",
+    "neg": "#e34948",
+    "ink": "#0b0b0b",
+    "ink2": "#52514e",
+    "muted": "#898781",
+    "grid": "#e1e0d9",
+    "axis": "#c3c2b7",
+    "band": "#f0efec",
+    "surface": "#ffffff"
+  },
+  "figures": {
+    "fig01_label_structure": {
+      "pdf": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig01_label_structure.pdf",
+      "png": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig01_label_structure.png",
+      "size_in": [
+        3.5,
+        2.3
+      ]
+    },
+    "fig02_loso_benchmark": {
+      "pdf": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig02_loso_benchmark.pdf",
+      "png": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig02_loso_benchmark.png",
+      "size_in": [
+        3.5,
+        3.6
+      ]
+    },
+    "fig03_task_shortcut": {
+      "pdf": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig03_task_shortcut.pdf",
+      "png": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig03_task_shortcut.png",
+      "size_in": [
+        7.16,
+        2.75
+      ]
+    },
+    "fig04_n1_tcai": {
+      "pdf": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig04_n1_tcai.pdf",
+      "png": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig04_n1_tcai.png",
+      "size_in": [
+        7.16,
+        2.5
+      ]
+    },
+    "fig05_cross_session": {
+      "pdf": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig05_cross_session.pdf",
+      "png": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig05_cross_session.png",
+      "size_in": [
+        7.16,
+        2.3
+      ]
+    },
+    "fig06_ablation": {
+      "pdf": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig06_ablation.pdf",
+      "png": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig06_ablation.png",
+      "size_in": [
+        7.16,
+        2.5
+      ]
+    },
+    "fig07_xai_regions_bands": {
+      "pdf": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig07_xai_regions_bands.pdf",
+      "png": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig07_xai_regions_bands.png",
+      "size_in": [
+        7.16,
+        2.3
+      ]
+    },
+    "fig08_scalp_maps": {
+      "pdf": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig08_scalp_maps.pdf",
+      "png": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig08_scalp_maps.png",
+      "size_in": [
+        3.5,
+        1.85
+      ]
+    },
+    "fig09_learned_graph": {
+      "pdf": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig09_learned_graph.pdf",
+      "png": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig09_learned_graph.png",
+      "size_in": [
+        7.16,
+        3.3
+      ]
+    },
+    "fig10_planned_comparisons": {
+      "pdf": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig10_planned_comparisons.pdf",
+      "png": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/fig10_planned_comparisons.png",
+      "size_in": [
+        3.5,
+        4.02
+      ]
+    }
+  },
+  "status": {
+    "fig01_label_structure": "ok",
+    "fig02_loso_benchmark": "ok",
+    "fig03_task_shortcut": "ok",
+    "fig04_n1_tcai": "ok",
+    "fig05_cross_session": "ok",
+    "fig06_ablation": "ok",
+    "fig07_xai_regions_bands": "ok",
+    "fig08_scalp_maps": "ok",
+    "fig09_learned_graph": "ok",
+    "fig10_planned_comparisons": "ok"
+  },
+  "inputs": {
+    "sec26_loso_summary.csv": "261745793972c010b7ac0b0548fe2344",
+    "sec26_cross_session_summary.csv": "732eaa68eb5206c1922eb976dc7b5375",
+    "sec26_family_tests.csv": "7eb1627d548d4568a299c6f4e4724813",
+    "sec22_benchmark_fold_bal_acc.csv": "538bac83769a0466ade12b2d48e11307",
+    "sec22_permutation_results.csv": "8337df4d094f4cab4f1aaef8c615d27c",
+    "sec22c_per_task_accuracy.csv": "f6e9656e5d67b14d8e93c6271aedea12",
+    "sec22b_probes_validation.csv": "9a4f038d729a7903ef021da6aeba7dd4",
+    "sec23_cross_session_table.csv": "234701c9245b4b4acaccc0ef72ed5eb6",
+    "sec23_kss_drift_by_session.csv": "1318a3263217d885617a74c14e65ba1b",
+    "sec24_buildup_table.csv": "57a1e6291613b99884d99ac210bb7710",
+    "sec24_ablation_table.csv": "f29f8e840997a1a51bf410ecf1f7b334",
+    "sec21_seed_table.csv": "67d85d7df4902c2cb909475dedd50255",
+    "sec25_region_importance.csv": "500c7293dfd008ba26662e64ea9ef433",
+    "sec25_band_importance.csv": "87507c9c615fb554961123ed4bfd04b1",
+    "sec25_channel_importance.csv": "be5c045b6592a6dfe5ff9ab3518f58fe",
+    "sec25_graph_edges.csv": "dd35b58eadae75adfa6a54941ab78035"
+  },
+  "latex_tables": {
+    "table1_loso_benchmark": {
+      "path": "/content/drive/MyDrive/CMx7_SI_DyGraph/reports/paper_tables/table1_loso_benchmark.tex",
+      "rows": 13
+    },
+    "table2_cross_session": {
+      "path": "/content/drive/MyDrive/CMx7_SI_DyGraph/reports/paper_tables/table2_cross_session.tex",
+      "rows": 9
+    },
+    "table3_planned_comparisons": {
+      "path": "/content/drive/MyDrive/CMx7_SI_DyGraph/reports/paper_tables/table3_planned_comparisons.tex",
+      "rows": 13
+    }
+  },
+  "captions": "/content/drive/MyDrive/CMx7_SI_DyGraph/figures/paper/FIGURE_CAPTIONS.md",
+  "plotted_values": {
+    "fig01": {
+      "high_share": {
+        "full": 0.8961,
+        "nbackarithmetic": 0.7397,
+        "nback": 0.2907,
+        "mentalarithmetic": 0.1447,
+        "activemotor": 0.0,
+        "motorimagery": 0.0,
+        "passivemotor": 0.0
+      },
+      "n_recordings": 514
+    },
+    "fig02": {
+      "EEGNet": 0.4517720859387525,
+      "EEGNet + plain GRL": 0.4587690396023729,
+      "EEGNet + TCAI": 0.4210626102292769,
+      "Temporal CNN": 0.4072951739618407,
+      "Fixed-graph GCN": 0.4233245149911817,
+      "Static learnable graph": 0.4049126182459516,
+      "Dynamic graph": 0.4103635561968895,
+      "+ graph consistency": 0.4243610710277377,
+      "+ subject adversary": 0.4096031746031746,
+      "+ plain task GRL (graph)": 0.3636952861952862,
+      "+ TCAI (graph)": 0.3223765432098765,
+      "Final model v2": 0.348577441077441
+    },
+    "fig02_subject_dots": {
+      "EEGNet": 0.4517720859387525,
+      "EEGNet + plain GRL": 0.4587690396023729,
+      "EEGNet + TCAI": 0.42106261022927693,
+      "Temporal CNN": 0.4072951739618407,
+      "Fixed-graph GCN": 0.4233245149911817,
+      "Static learnable graph": 0.40491261824595165,
+      "Dynamic graph": 0.4103635561968895,
+      "+ graph consistency": 0.42436107102773774,
+      "+ subject adversary": 0.4096031746031746,
+      "+ plain task GRL (graph)": 0.36369528619528624,
+      "+ TCAI (graph)": 0.32237654320987646,
+      "Final model v2": 0.34857744107744104
+    },
+    "fig03": {
+      "n_above_task_only": 3,
+      "n_subjects": 30,
+      "per_task_eegnet": {
+        "task-passivemotor": 0.75,
+        "task-activemotor": 0.5522,
+        "task-motorimagery": 0.4819,
+        "task-full": 0.4935,
+        "task-nbackarithmetic": 0.5068,
+        "task-nback": 0.2791,
+        "task-mentalarithmetic": 0.3026
+      },
+      "permutation": {
+        "eegnet": [
+          0.452,
+          0.438
+        ],
+        "final": [
+          0.349,
+          0.349
+        ]
+      }
+    },
+    "fig04": {
+      "loso": {
+        "EEGNet:no_adv": 0.4517720859387525,
+        "EEGNet:plain": 0.4587690396023729,
+        "EEGNet:tcai": 0.4210626102292769,
+        "EEGNet:p_holm": 0.7626616196016939,
+        "Graph:no_adv": 0.4096031746031746,
+        "Graph:plain": 0.3636952861952862,
+        "Graph:tcai": 0.3223765432098765,
+        "Graph:p_holm": 0.4860567402665476
+      },
+      "xses": {
+        "EEGNet:no_adv": 0.4090079365079366,
+        "EEGNet:plain": 0.4092324033990701,
+        "EEGNet:tcai": 0.4227918069584735,
+        "EEGNet:p_holm": 0.7868583059692137,
+        "Graph:no_adv": 0.4437297578964246,
+        "Graph:plain": 0.4280916305916306,
+        "Graph:tcai": 0.4145502645502646,
+        "Graph:p_holm": 0.7868583059692137
+      },
+      "probe": {
+        "no_adv": 0.21817999999999999,
+        "plain": 0.21885333333333337,
+        "tcai": 0.21685666666666667
+      },
+      "probe_chance": 0.23371666666666668
+    },
+    "fig05": {
+      "bal_acc": {
+        "task name only (no EEG)": [
+          0.791,
+          0.751,
+          0.688
+        ],
+        "EEGNet": [
+          0.403,
+          0.497,
+          0.485
+        ],
+        "Graph A (+consistency +subject adv)": [
+          0.504,
+          0.501,
+          0.503
+        ],
+        "Final model v2": [
+          0.363,
+          0.404,
+          0.403
+        ]
+      },
+      "kss": [
+        3.49,
+        4.34,
+        5.11
+      ]
+    },
+    "fig06": {
+      "buildup": {
+        "Static learnable graph (S16)": 0.405,
+        "Dynamic graph (S17)": 0.41,
+        "+ graph consistency (S18)": 0.424,
+        "+ subject adversary (S19)": 0.41,
+        "+ TCAI (S20 C)": 0.322,
+        "+ attention pooling = v1 (S21, seed 0)": 0.333,
+        "+ subject alignment = v2 (S21B)": 0.349
+      },
+      "loo": {
+        "\u2212 TCAI": 0.034,
+        "\u2212 subject adversary": -0.02,
+        "\u2212 graph consistency": -0.016
+      },
+      "seed_sd": 0.011712709048435539
+    },
+    "fig07": {
+      "EEGNet": {
+        "frontal_polar_eye": 0.9472,
+        "frontal": 1.4172,
+        "temporal_emg": 0.6983,
+        "central_motor": 1.1867,
+        "parietal_occipital": 0.909
+      },
+      "Final model v2": {
+        "frontal_polar_eye": 0.7743,
+        "frontal": 1.1781,
+        "temporal_emg": 0.8902,
+        "central_motor": 1.0679,
+        "parietal_occipital": 1.0417
+      },
+      "EEGNet:bands": {
+        "delta": 0.0536,
+        "theta": 0.002,
+        "alpha": 0.0112,
+        "beta": 0.0064,
+        "gamma": 0.0044
+      },
+      "Final model v2:bands": {
+        "delta": 0.0099,
+        "theta": -0.0059,
+        "alpha": 0.0083,
+        "beta": 0.0224,
+        "gamma": 0.0104
+      }
+    },
+    "fig08": {
+      "EEGNet": {
+        "FP1": 0.01837,
+        "FP2": 0.02847,
+        "F7": 0.02758,
+        "F8": 0.03731,
+        "F3": 0.02862,
+        "Fz": 0.05391,
+        "F4": 0.03593,
+        "FT7": 0.02677,
+        "FT8": 0.01129,
+        "T7": 0.03333,
+        "FC3": 0.07039,
+        "FC4": 0.01314,
+        "T8": 0.03563,
+        "TP7": 0.02095,
+        "C1": 0.06219,
+        "Cz": 0.04105,
+        "C2": 0.04729,
+        "TP8": 0.04324,
+        "C3": 0.01871,
+        "C4": 0.03701,
+        "CP1": 0.00504,
+        "CP2": 0.01452,
+        "P7": 0.02194,
+        "P3": 0.02535,
+        "Pz": 6e-05,
+        "P4": 0.01534,
+        "P8": 0.03755,
+        "PO7": 0.02454,
+        "PO3": 0.03242,
+        "PO4": 0.00143,
+        "PO8": 0.05457,
+        "Oz": 0.07604
+      },
+      "Final model v2": {
+        "FP1": 0.03513,
+        "FP2": 0.02902,
+        "F7": 0.037,
+        "F8": 0.04028,
+        "F3": 0.04027,
+        "Fz": 0.01281,
+        "F4": 0.02495,
+        "FT7": 0.03126,
+        "FT8": 0.02589,
+        "T7": 0.05021,
+        "FC3": 0.04873,
+        "FC4": 0.04367,
+        "T8": 0.02892,
+        "TP7": 0.0271,
+        "C1": 0.03101,
+        "Cz": 0.02164,
+        "C2": 0.01272,
+        "TP8": 0.02685,
+        "C3": 0.02672,
+        "C4": 0.02607,
+        "CP1": 0.02676,
+        "CP2": 0.03365,
+        "P7": 0.03704,
+        "P3": 0.0272,
+        "Pz": 0.03084,
+        "P4": 0.02775,
+        "P8": 0.02828,
+        "PO7": 0.02291,
+        "PO3": 0.02933,
+        "PO4": 0.03382,
+        "PO8": 0.03691,
+        "Oz": 0.04527
+      }
+    },
+    "fig09": {
+      "top_edges": [
+        "FP1-F7",
+        "FP1-F3",
+        "FT7-FC3",
+        "FT8-FC4",
+        "TP8-P8"
+      ],
+      "max_abs_high_minus_low": 0.012821333,
+      "n_positive": 1
+    },
+    "fig10": {
+      "family": "F3 LOSO planned",
+      "n_tests": 13,
+      "n_significant": 1
+    }
+  }
+}

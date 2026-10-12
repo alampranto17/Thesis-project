@@ -1,0 +1,5 @@
+strategy,n_classes,class_counts,smallest_class_share,imbalance_ratio,cramers_v_task,subjects_with_2plus_classes,subjects_total
+S1 fixed bins 1-3 / 4-6 / 7-9,3,"{'low': 238, 'medium': 117, 'high': 159}",0.22762645914396887,2.034188034188034,0.6887591642212119,30,30
+S2 binary fixed (high >= 6),2,"{'low': 303, 'high': 211}",0.41050583657587547,1.4360189573459716,0.8069153604620007,30,30
+S3 LOSO training-fold tertiles,3,"{'low': 186, 'medium': 169, 'high': 159}",0.3093385214007782,1.169811320754717,0.6739531552444539,30,30
+S4 within-subject median split (NOT allowed by §6),2,"{'low': 291, 'high': 223}",0.433852140077821,1.304932735426009,0.8287154899220303,30,30

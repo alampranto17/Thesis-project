@@ -1,0 +1,55 @@
+{
+  "recording": "sub-001/ses-01/task-nback",
+  "edf_file": "sub-001/ses-01/eeg/sub-001_ses-01_task-nback_eeg.edf",
+  "edf_sfreq": 250.00100000400002,
+  "eeg_json_sfreq": 250.0009023984434,
+  "edf_duration_s": 215.999136,
+  "n_edf_channels": 33,
+  "extra_edf_channels": [
+    "Status"
+  ],
+  "edf_units_eeg_channels": [
+    "\u00b5V"
+  ],
+  "median_filt_std_uv": 25.899639772148472,
+  "alpha_peak_hz": 7.50003000012,
+  "line_50hz_db_median": 2.236624348388742,
+  "line_50hz_db_max": 4.314058414418433,
+  "bad_channel_candidates": [
+    "FP1",
+    "FP2"
+  ],
+  "mne_bids_reader_works": true,
+  "checks": {
+    "array_shape_is_32_x_samples": true,
+    "channel_order_equals_reference": true,
+    "all_values_finite": true,
+    "qc_table_has_all_channels": true,
+    "segment_inside_recording": "True"
+  },
+  "data_flags": {
+    "edf_sfreq_within_tolerance": true,
+    "edf_sfreq_exactly_nominal": false,
+    "duration_matches_eeg_json": "True",
+    "edf_units_microvolt": true,
+    "amplitude_plausible_1_to_100uV": true,
+    "events_inside_recording": true,
+    "line_noise_below_threshold": true,
+    "no_bad_channel_candidates": false,
+    "mne_bids_reader_works": true
+  },
+  "storage_estimate_gb_float32_continuous": 3.56,
+  "drive_free_gb": 11.72,
+  "thresholds": {
+    "audit_session": "ses-01",
+    "audit_task": "task-nback",
+    "audit_segment_start_s": 30.0,
+    "audit_segment_seconds": 10.0,
+    "sfreq_tolerance_hz": 0.01,
+    "psd_fmax_hz": 120.0,
+    "qc_flat_std_uv": 0.5,
+    "qc_noisy_robust_z": 5.0,
+    "qc_min_median_corr": 0.4,
+    "qc_line_noise_db_threshold": 10.0
+  }
+}

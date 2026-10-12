@@ -1,0 +1,6 @@
+model,fold_mean
+task name only (no EEG),0.771
+Temporal CNN,0.407
+EEGNet,0.452
+Fixed-graph GCN,0.423
+Static learnable graph,0.405

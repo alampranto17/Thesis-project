@@ -1,0 +1,28 @@
+{
+  "rule": {
+    "dataset": "COG-BCI, N-back (0/1/2) and MATB (easy/med/diff), all sessions, LOSO over all participants",
+    "frozen": "architecture and hyper-parameters copied from CMx7 (no tuning on COG-BCI)",
+    "H-N1a": "task-invariant training helps when task and workload are crossed: C (TCAI) > A (no adversary), LOSO fold balanced accuracy, one-sided Wilcoxon over test subjects, Holm over the two backbones (EEGNet, graph), p < 0.05",
+    "H-N1b": "TCAI vs plain GRL: theory predicts C ~ B under a balanced crossed design; reported with a 95% CI, no directional claim",
+    "H-N1c": "C carries less task information than A: task probe on validation embeddings, one-sided Wilcoxon over folds, p < 0.05",
+    "N1 verdict": "SUPPORTED = H-N1a and H-N1c on the same backbone; PARTLY = one of them; NOT SUPPORTED = neither",
+    "H-M": "proposed model generalises to a second dataset: final model v2 and Graph A vs EEGNet, two-sided Wilcoxon, Holm over the two; claim only if delta > 0 and p_Holm < 0.05",
+    "design check": "task-only lookup must be near chance (crossed design)",
+    "recent models": "ShallowConvNet, EEG-Conformer, CBraMod (probe / fine-tune) with library defaults: reported on the same folds; final model v2 vs each recent model with Holm (two-sided, descriptive -- no direction pre-specified)",
+    "models": [
+      "EEGNet",
+      "EEGNet + plain task GRL",
+      "EEGNet + TCAI",
+      "Graph A (+consistency +subject adv)",
+      "Graph B (+plain task GRL)",
+      "Graph C (+TCAI)",
+      "Final model v2 (proposed)",
+      "ShallowConvNet",
+      "EEG-Conformer",
+      "CBraMod (frozen, linear probe)",
+      "CBraMod (fine-tuned)"
+    ],
+    "seed_offset": 0
+  },
+  "written_before_training": "2026-10-09T19:29:29.783006+00:00"
+}

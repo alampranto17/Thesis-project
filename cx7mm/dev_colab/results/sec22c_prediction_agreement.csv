@@ -1,0 +1,3 @@
+comparison,agreement,agreement_expected_by_chance
+EEGNet pred == task name only pred,0.492,0.343
+EEGNet pred == task group only pred,0.44,0.322

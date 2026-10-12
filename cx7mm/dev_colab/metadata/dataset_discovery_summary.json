@@ -1,0 +1,55 @@
+{
+  "bids_root": "/content/drive/MyDrive/CMx7-MM_dataset",
+  "dataset_source_used": "dataset_drive_path",
+  "sessions": [
+    "ses-01",
+    "ses-02",
+    "ses-03"
+  ],
+  "tasks": [
+    "task-activemotor",
+    "task-full",
+    "task-mentalarithmetic",
+    "task-motorimagery",
+    "task-nback",
+    "task-nbackarithmetic",
+    "task-passivemotor"
+  ],
+  "runs": [],
+  "counts": {
+    "subjects": 30,
+    "sessions": 3,
+    "tasks": 7,
+    "runs": 0,
+    "eeg_files": 515,
+    "eeg_json_sidecars": 515,
+    "events_tsv_all": 1044,
+    "events_tsv_in_eeg_folders": 525,
+    "channels_tsv_all": 1044,
+    "channels_tsv_in_eeg_folders": 522,
+    "events_json_sidecars": 7,
+    "electrodes_tsv": 0,
+    "physio_files": 1562,
+    "rating_candidates": 0,
+    "other_tables": 3
+  },
+  "top_level_files": [
+    "CHANGES",
+    "README",
+    "dataset_description.json",
+    "eeg.json",
+    "nirs.json",
+    "participants.json",
+    "participants.tsv",
+    "task-activemotor_events.json",
+    "task-full_events.json",
+    "task-mentalarithmetic_events.json",
+    "task-motorimagery_events.json",
+    "task-nback_events.json",
+    "task-nbackarithmetic_events.json",
+    "task-passivemotor_events.json"
+  ],
+  "non_subject_dirs": [
+    "phenotype"
+  ]
+}

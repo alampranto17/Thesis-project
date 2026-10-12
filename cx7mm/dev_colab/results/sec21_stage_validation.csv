@@ -1,0 +1,10 @@
+stage,folds,validation_bal_acc_mean
+Temporal CNN,30,0.433
+EEGNet,30,0.478
+Fixed-graph GCN,30,0.445
+Static learnable graph,30,0.447
+Dynamic graph,30,0.451
++ graph consistency,30,0.448
++ subject adversary,30,0.448
++ plain task GRL,30,0.456
++ TCAI (flatten head),30,0.453

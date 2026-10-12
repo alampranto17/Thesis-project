@@ -1,0 +1,4 @@
+run,accuracy,balanced_accuracy,macro_f1,cohen_kappa,fold_bal_acc_mean,fold_bal_acc_sd,one_class_folds,mean_within_task_rho,reference,reference_fold_mean,delta_vs_reference,wilcoxon_p_vs_reference
+"EEGNet, recording_scaled input",0.414,0.41,0.385,0.116,0.419,0.151,7,-0.109,"EEGNet, train_global (Section 14)",0.452,-0.033,0.394
+"final model, recording_scaled input (no subject alignment)",0.37,0.363,0.358,0.051,0.357,0.13,10,0.003,"final model v2, subject_zscore",0.349,0.009,0.649
+"  (same, vs v1 train_global seed 0)",0.37,0.363,0.358,0.051,0.357,0.13,10,0.003,v1 train_global seed 0,0.333,0.024,0.317

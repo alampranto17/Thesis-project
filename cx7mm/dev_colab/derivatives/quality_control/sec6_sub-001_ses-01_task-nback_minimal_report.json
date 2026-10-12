@@ -1,0 +1,100 @@
+{
+  "stem": "sub-001_ses-01_task-nback",
+  "eeg_file": "sub-001/ses-01/eeg/sub-001_ses-01_task-nback_eeg.edf",
+  "sfreq": 250.00100000400002,
+  "duration_s": 215.995136016,
+  "extra_edf_channels": [
+    "Status"
+  ],
+  "n_events": 121,
+  "task_start_s": 25.0,
+  "status": "ok",
+  "bad_channels": [],
+  "interpolated_channels": [],
+  "n_interpolated": 0,
+  "notch_applied": false,
+  "artifact_stats": {
+    "n_segments": 216,
+    "segment_max_ptp_uv_percentiles": {
+      "50": 67.2,
+      "90": 273.6,
+      "95": 285.6,
+      "99": 418.8,
+      "100": 12541.9
+    },
+    "n_bad_severe_segments": 2,
+    "n_bad_flat_segments": 0
+  },
+  "task_period_bad_share": 0.0,
+  "seconds": 0.4,
+  "power_change_db": {
+    "below_0.8Hz": -3.7266576310894024,
+    "8_12Hz": -0.09982151781236401,
+    "above_50Hz": -41.87505951541647
+  },
+  "residual_line_db": -12.732934086231007,
+  "stimulus_rhythm": {
+    "stimulus_types": [
+      "target",
+      "trigger"
+    ],
+    "n_stimuli": 120,
+    "isi_s": 1.5,
+    "f0_hz": 0.6667,
+    "n_harmonics_2_to_max": 58,
+    "comb_db_median": -0.14,
+    "comb_db_median_per_channel_max": 0.25,
+    "n_epochs": 120,
+    "gfp_peak_latency_s": 0.708,
+    "gfp_max_0_30ms_uv": 3.66,
+    "gfp_max_80_250ms_uv": 4.75
+  },
+  "checks": {
+    "32_channels_in_reference_order": true,
+    "sfreq_unchanged": true,
+    "all_values_finite": true,
+    "average_reference_applied": true,
+    "interpolated_within_limit": true,
+    "dc_offset_removed": true,
+    "high_frequencies_removed": "True",
+    "annotations_inside_recording": true
+  },
+  "data_flags": {
+    "status_ok": true,
+    "no_bad_channels": true,
+    "task_period_mostly_clean": true,
+    "residual_50Hz_below_threshold": true,
+    "alpha_band_preserved": "True",
+    "no_strong_stimulus_comb": true
+  },
+  "montage": "colin27_1020",
+  "config_used": {
+    "montage_candidates": [
+      "colin27_1020",
+      "standard_1020"
+    ],
+    "ocular_channels": [
+      "FP1",
+      "FP2",
+      "F7",
+      "F8"
+    ],
+    "bad_hf_noise_robust_z": 5.0,
+    "bad_channel_min_indicators": 2,
+    "max_interpolated_channels": 3,
+    "artifact_segment_seconds": 1.0,
+    "severe_artifact_ptp_uv": 500.0,
+    "flat_segment_ptp_uv": 1.0,
+    "comb_harmonics_max_hz": 40.0,
+    "task_duration_seconds": 180.0,
+    "label_strategy": "loso_train_tertiles",
+    "highpass_hz": 1.0,
+    "lowpass_hz": 40.0,
+    "apply_notch": false,
+    "notch_hz": 50.0,
+    "reference": "average",
+    "qc_flat_std_uv": 0.5,
+    "qc_noisy_robust_z": 5.0,
+    "qc_min_median_corr": 0.4
+  }
+}

@@ -1,0 +1,3 @@
+model,true_fold_bal_acc,permuted_fold_bal_acc,folds_permuted_lower,folds_permuted_higher,wilcoxon_p,true_macro_f1,permuted_macro_f1,true_within_task_rho,permuted_within_task_rho,rho_true_minus_permuted_95CI
+final,0.349,0.349,17,12,0.387,0.319,0.362,0.049,0.02,"(-0.239, 0.239)"
+eegnet,0.452,0.438,13,11,0.989,0.448,0.426,-0.041,0.013,"(-0.238, 0.128)"

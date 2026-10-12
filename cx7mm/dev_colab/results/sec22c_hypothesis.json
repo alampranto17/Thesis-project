@@ -1,0 +1,22 @@
+{
+  "groups": {
+    "motor": [
+      "task-activemotor",
+      "task-passivemotor",
+      "task-motorimagery"
+    ],
+    "cognitive": [
+      "task-mentalarithmetic",
+      "task-nback",
+      "task-nbackarithmetic"
+    ],
+    "cognitive_motor": [
+      "task-full"
+    ]
+  },
+  "H-a": "EEGNet validation embeddings: motor-vs-cognitive probe > 0.5, one-sided Wilcoxon over folds p < 0.05",
+  "H-b": "EEGNet test accuracy motor > cognitive recordings, paired one-sided Wilcoxon over held-out subjects p < 0.05",
+  "verdict": "SUPPORTED = H-a & H-b; PARTLY SUPPORTED = one; NOT SUPPORTED = none",
+  "rhythm_null": "100 within-training-subject task-label permutations, seed 7777",
+  "written": "2026-10-07T10:23:55.942704+00:00"
+}
