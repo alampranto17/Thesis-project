@@ -1,0 +1,12 @@
+{
+  "dataset": "cog",
+  "candidate": "d_tricks",
+  "seed": 1000,
+  "fold_id": "loso_28",
+  "val_bal_acc": 0.5972222222222222,
+  "val_bal_acc_center": 0.5555555555555556,
+  "train_loss_last": 0.9364961827242816,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-12T18:36:41.285592+00:00"
+}
