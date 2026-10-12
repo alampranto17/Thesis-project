@@ -1,0 +1,65 @@
+{
+  "N1M": "PARTLY",
+  "best": {
+    "cog": {
+      "verdict": "v3 is NOT the best: highest mean = EEGNet + EA + AdaBN",
+      "v3_vs_each_p_holm": {
+        "EEGNet": 0.2168,
+        "EEGNet + TCAI": 0.0279,
+        "IG-TCAI (EEGNet, N1-M)": 0.0034,
+        "EEGNet + EA + AdaBN": 1.0,
+        "ShallowConvNet": 0.668,
+        "EEG-Conformer": 1.0,
+        "CBraMod (frozen, linear probe)": 0.8749,
+        "CBraMod (fine-tuned)": 1.0,
+        "EEGNet + plain task GRL": 0.0708,
+        "Graph A (+consistency +subject adv)": 0.745,
+        "Graph B (+plain task GRL)": 0.47,
+        "Graph C (+TCAI)": 0.0034,
+        "Final model v2 (proposed)": 0.0516
+      }
+    },
+    "cmx7": {
+      "verdict": "v3 is NOT the best: highest mean = CBraMod (frozen, linear probe)",
+      "v3_vs_each_p_holm": {
+        "EEGNet": 1.0,
+        "EEGNet + TCAI": 0.6824,
+        "IG-TCAI (EEGNet, N1-M)": 1.0,
+        "EEGNet + EA + AdaBN": 1.0,
+        "ShallowConvNet": 0.0952,
+        "EEG-Conformer": 0.8204,
+        "CBraMod (frozen, linear probe)": 1.0,
+        "CBraMod (fine-tuned)": 0.3934
+      }
+    }
+  },
+  "complete": {
+    "cog": {
+      "eegnet": true,
+      "eegnet_tcai": true,
+      "eegnet_igtcai": true,
+      "eegnet_tricks": true,
+      "v3": true,
+      "shallowconvnet": true,
+      "eegconformer": true,
+      "cbramod_probe": true,
+      "cbramod_finetune": true,
+      "eegnet_plain": true,
+      "graph_a": true,
+      "graph_b": true,
+      "graph_c": true,
+      "final_model": true
+    },
+    "cmx7": {
+      "eegnet": true,
+      "eegnet_tcai": true,
+      "eegnet_igtcai": true,
+      "eegnet_tricks": true,
+      "v3": true,
+      "shallowconvnet": true,
+      "eegconformer": true,
+      "cbramod_probe": true,
+      "cbramod_finetune": true
+    }
+  }
+}

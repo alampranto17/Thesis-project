@@ -1,0 +1,70 @@
+{
+  "verdict": "NOT SUPPORTED",
+  "H-S1": true,
+  "H-S2": false,
+  "H-S3": false,
+  "n_test_subjects": 15,
+  "tlci": [
+    {
+      "dataset": "COG-BCI sweep",
+      "level": "L0_crossed",
+      "TLCI": 0.0,
+      "shortcut": 0.0,
+      "train_fit_task_only_bal_acc": 0.3333333333333333,
+      "train_recordings_per_fold": 216.0,
+      "class_counts_per_fold": "[72 72 72]",
+      "nback_share": 0.5
+    },
+    {
+      "dataset": "COG-BCI sweep",
+      "level": "L1_correlated",
+      "TLCI": 0.3599147425685767,
+      "shortcut": 0.22708091983552664,
+      "train_fit_task_only_bal_acc": 0.6018518518518519,
+      "train_recordings_per_fold": 216.0,
+      "class_counts_per_fold": "[72 72 72]",
+      "nback_share": 0.5
+    },
+    {
+      "dataset": "COG-BCI sweep",
+      "level": "L2_collinear",
+      "TLCI": 1.0,
+      "shortcut": 0.579380164285695,
+      "train_fit_task_only_bal_acc": 0.6666666666666666,
+      "train_recordings_per_fold": 216.0,
+      "class_counts_per_fold": "[72 72 72]",
+      "nback_share": 0.6666666666666666
+    },
+    {
+      "dataset": "COG-BCI (all recordings)",
+      "level": "natural",
+      "TLCI": 0.0,
+      "shortcut": 0.0,
+      "train_fit_task_only_bal_acc": NaN,
+      "train_recordings_per_fold": NaN,
+      "class_counts_per_fold": NaN,
+      "nback_share": NaN
+    },
+    {
+      "dataset": "CMx7-MM",
+      "level": "natural (label = rating tertile)",
+      "TLCI": 0.26382138288480433,
+      "shortcut": 0.46560285880335917,
+      "train_fit_task_only_bal_acc": NaN,
+      "train_recordings_per_fold": NaN,
+      "class_counts_per_fold": NaN,
+      "nback_share": NaN
+    },
+    {
+      "dataset": "CMx7-MM",
+      "level": "natural (TCAI condition = rating)",
+      "TLCI": 0.33313414464882724,
+      "shortcut": 0.30983503896965064,
+      "train_fit_task_only_bal_acc": NaN,
+      "train_recordings_per_fold": NaN,
+      "class_counts_per_fold": NaN,
+      "nback_share": NaN
+    }
+  ],
+  "finished_utc": "2026-10-12T14:25:50.707743+00:00"
+}

@@ -1,0 +1,9 @@
+claim,evidence,verdict
+N1-T theory + TLCI diagnostic,"TLCI training folds: COG-BCI 0.000, CMx7 0.338",DELIVERED
+N1 collinearity sweep (H-S1..H-S3),n1_sweep/N1_SWEEP_REPORT.md,NOT SUPPORTED
+"N1 TCAI on COG-BCI (H-N1a/c, E7.3)",cogbci_tests.csv,PARTLY SUPPORTED
+"N1-M IG-TCAI (non-inferior on CMx7, superior on COG-BCI)",final_*_tests.csv,PARTLY
+H-V3 v3 > EEGNet + tricks (cog),final_cog_tests.csv,NOT SUPPORTED
+v3 best model (cog),best-model rule (F0.6),v3 is NOT the best: highest mean = EEGNet + EA + AdaBN
+H-V3 v3 > EEGNet + tricks (cmx7),final_cmx7_tests.csv,NOT SUPPORTED
+v3 best model (cmx7),best-model rule (F0.6),"v3 is NOT the best: highest mean = CBraMod (frozen, linear probe)"

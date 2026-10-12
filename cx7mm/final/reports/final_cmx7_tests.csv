@@ -1,0 +1,6 @@
+test,status,family,mean_diff,ci,wins,losses,p,met,p_holm
+H-IG-NI: IG-TCAI non-inferior to EEGNet (margin),run,,-0.010917508417508421,"(np.float64(-0.069), np.float64(0.04))",11,6,0.03152463984169689,True,
+H-IG-vs-TCAI: IG-TCAI > TCAI,run,,0.00952821869488536,"(np.float64(-0.043), np.float64(0.056))",11,7,0.21021323679187026,False,
+H-V3: v3 > EEGNet + tricks,run,H-V3,0.005280583613916947,"(np.float64(-0.032), np.float64(0.042))",12,12,0.471526885205563,False,0.943053770411126
+(report) v3 vs EEGNet,run,,0.004135000801667469,"(np.float64(-0.053), np.float64(0.055))",16,10,0.55060588584296,False,
+(report) EEGNet + tricks vs EEGNet,run,,-0.0011455828122494776,"(np.float64(-0.056), np.float64(0.055))",14,13,0.9234301386057244,False,
