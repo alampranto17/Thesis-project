@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "fold_id": "loso_22",
+    "model": "CBraMod (frozen, linear probe)",
+    "best_epoch": 3,
+    "val_bal_acc": 0.513888888888889,
+    "test_bal_acc": 0.5,
+    "dataset": "cog"
+  },
+  "finished": "2026-10-12T09:48:31.960359+00:00"
+}
