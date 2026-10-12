@@ -1,0 +1,48 @@
+{
+  "rule": {
+    "protocol": "SWA: fixed number of epochs, weights averaged over the last epochs; no epoch selection on validation",
+    "swa_epochs": 20,
+    "swa_last": 8,
+    "seeds": [
+      0,
+      1000,
+      2000
+    ],
+    "candidates": {
+      "d_tricks": {
+        "name": "EEGNet + EA + AdaBN [SWA]",
+        "model": "eegnet",
+        "rank": 0.0,
+        "label_smoothing": 0.0,
+        "role": "baseline"
+      },
+      "d_v3": {
+        "name": "v3 [SWA] (EA + IG-TCAI + rank + AdaBN)",
+        "model": "igtcai",
+        "rank": 0.5,
+        "label_smoothing": 0.0,
+        "role": "v4 candidate"
+      },
+      "d_v3_ls": {
+        "name": "v3 + label smoothing [SWA]",
+        "model": "igtcai",
+        "rank": 0.5,
+        "label_smoothing": 0.1,
+        "role": "v4 candidate"
+      }
+    },
+    "test_time_options": {
+      "none": "arg-max of the recording probabilities",
+      "center": "subject-wise score centring: log-probabilities minus the subject's mean per class (label-free, uses only the subject's own recordings)"
+    },
+    "validation_metric": "recording-level balanced accuracy over the 4 validation subjects of each fold, AdaBN applied per validation subject (as on the test subject)",
+    "selection_rule": "v4 = the 'v4 candidate' with the highest mean over the two datasets of the fold-mean validation balanced accuracy (seed 0, test-time option chosen per dataset by validation). Ties -> the simpler candidate (fewer extra terms). The baseline chooses its own test-time option per dataset by validation in the same way.",
+    "tests": {
+      "H-V4": "v4 (3-seed ensemble) > EEGNet + EA + AdaBN [SWA] (3-seed ensemble), one-sided Wilcoxon over held-out subjects, Holm over the 2 datasets, alpha 0.05",
+      "H-V4-prev": "v4 (3-seed ensemble) > the best pre-registered model of the FINAL run (EEGNet + EA + AdaBN, 3-seed ensemble, early stopping), one-sided Wilcoxon, Holm over the 2 datasets",
+      "best-model rule": "v4 is called 'best' on a dataset only if its fold-mean is the highest of all models in the final benchmark AND H-V4-prev is met there"
+    },
+    "status": "post-hoc, validation-selected, exploratory (designed after the pre-registered results were known)"
+  },
+  "saved_utc": "2026-10-12T15:05:55.176656+00:00"
+}
