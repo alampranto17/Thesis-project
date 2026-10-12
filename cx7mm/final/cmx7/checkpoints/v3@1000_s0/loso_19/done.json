@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "fold_id": "loso_19",
+    "model": "v3 proposed (EA + IG-TCAI + rank + AdaBN) (seed 1000)",
+    "best_epoch": 5,
+    "val_bal_acc": 0.5502540937323546,
+    "test_bal_acc": 0.6666666666666666,
+    "dataset": "cmx7"
+  },
+  "finished": "2026-10-12T13:49:19.038071+00:00"
+}
