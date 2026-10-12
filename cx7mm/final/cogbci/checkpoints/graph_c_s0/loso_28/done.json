@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "fold_id": "loso_28",
+    "model": "Graph C (+TCAI)",
+    "best_epoch": 3,
+    "val_bal_acc": 0.4305555555555556,
+    "test_bal_acc": 0.3888888888888889,
+    "dataset": "cog"
+  },
+  "finished": "2026-10-12T03:46:47.818128+00:00"
+}

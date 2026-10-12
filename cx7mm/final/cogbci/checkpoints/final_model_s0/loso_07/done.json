@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "fold_id": "loso_07",
+    "model": "Final model v2 (proposed)",
+    "best_epoch": 8,
+    "val_bal_acc": 0.5277777777777778,
+    "test_bal_acc": 0.38888888888888884,
+    "dataset": "cog"
+  },
+  "finished": "2026-10-12T03:52:02.724403+00:00"
+}
