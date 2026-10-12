@@ -3,9 +3,8 @@
     "fold_id": "loso_19",
     "model": "EEGNet + plain task GRL",
     "best_epoch": 4,
-    "val_bal_acc": 0.47222222222222227,
-    "test_bal_acc": 0.3888888888888889,
-    "dataset": "cog"
+    "val_bal_acc": 0.48611111111111116,
+    "test_bal_acc": 0.3888888888888889
   },
-  "finished": "2026-10-12T03:45:09.356371+00:00"
+  "finished": "2026-10-09T17:32:10.739804+00:00"
 }
