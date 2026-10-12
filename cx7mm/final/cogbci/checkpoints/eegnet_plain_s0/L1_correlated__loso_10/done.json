@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "fold_id": "L1_correlated__loso_10",
+    "model": "EEGNet + plain task GRL",
+    "best_epoch": 3,
+    "val_bal_acc": 0.7222222222222222,
+    "test_bal_acc": 0.3333333333333333,
+    "dataset": "cog"
+  },
+  "finished": "2026-10-12T04:36:56.159444+00:00"
+}

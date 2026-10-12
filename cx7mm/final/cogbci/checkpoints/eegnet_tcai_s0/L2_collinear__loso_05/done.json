@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "fold_id": "L2_collinear__loso_05",
+    "model": "EEGNet + TCAI",
+    "best_epoch": 16,
+    "val_bal_acc": 0.75,
+    "test_bal_acc": 0.3333333333333333,
+    "dataset": "cog"
+  },
+  "finished": "2026-10-12T04:27:10.815463+00:00"
+}
