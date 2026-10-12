@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "fold_id": "loso_18",
+    "model": "EEG-Conformer",
+    "best_epoch": 9,
+    "val_bal_acc": 0.5030864197530864,
+    "test_bal_acc": 0.4523809523809524,
+    "dataset": "cmx7"
+  },
+  "finished": "2026-10-12T05:19:16.482689+00:00"
+}
