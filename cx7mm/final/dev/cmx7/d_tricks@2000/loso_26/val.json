@@ -1,0 +1,12 @@
+{
+  "dataset": "cmx7",
+  "candidate": "d_tricks",
+  "seed": 2000,
+  "fold_id": "loso_26",
+  "val_bal_acc": 0.49333333333333323,
+  "val_bal_acc_center": 0.5367901234567901,
+  "train_loss_last": 0.8636902058235952,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-12T20:27:38.760502+00:00"
+}
