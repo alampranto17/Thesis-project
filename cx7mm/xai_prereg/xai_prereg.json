@@ -1,0 +1,183 @@
+{
+ "title": "XAI pre-registration, CMx7-SI-DyGraph",
+ "written_utc": "2026-10-12T20:16:48.414634+00:00",
+ "status": "pre-registered before any XAI computation on M_prop, M_ref, M_base; model accuracies already known",
+ "models": {
+  "M_prop": {
+   "key": "d_v3_ls",
+   "lock": "cx7mm/final/dev/v4_lock.json",
+   "weights": "cx7mm/final/dev/{cmx7,cog}/d_v3_ls/loso_*/swa_model.pt",
+   "seed": 0
+  },
+  "M_ref": {
+   "key": "d_tricks",
+   "weights": "cx7mm/final/dev/{cmx7,cog}/d_tricks/loso_*/swa_model.pt",
+   "seed": 0
+  },
+  "M_base": {
+   "key": "eegnet_s0",
+   "weights": "cx7mm/final/{cmx7,cogbci}/checkpoints/eegnet_s0/loso_*/best.pt",
+   "folds": "loso_* only (not L*__loso_*)",
+   "seed": 0
+  },
+  "descriptive": [
+   "final_model_s0 (COG-BCI)",
+   "development v2 (CMx7-MM, Drive)"
+  ],
+  "amendment_rule": "if P2 changes M_prop, commit a dated amendment before any XAI computation; hypotheses unchanged"
+ },
+ "settings": {
+  "windows_per_recording": 6,
+  "target": "true workload class",
+  "ig_steps": 16,
+  "ig_baseline": "zero in normalised space",
+  "channel_map": "sum over time of |IG|, L1-normalised",
+  "alignment": "AdaBN re-estimated on the test subject; attributions w.r.t. input before EA",
+  "occlusion_value": 0.0,
+  "effect": "drop in true-class probability",
+  "share": "|effect| / sum |effects| within set",
+  "bands": {
+   "delta": [
+    1,
+    4
+   ],
+   "theta": [
+    4,
+    8
+   ],
+   "alpha": [
+    8,
+    13
+   ],
+   "beta": [
+    13,
+    30
+   ],
+   "gamma": [
+    30,
+    40
+   ]
+  },
+  "regions": {
+   "frontal_polar_eye": [
+    "FP1",
+    "FP2",
+    "F7",
+    "F8"
+   ],
+   "frontal": [
+    "F3",
+    "Fz",
+    "F4"
+   ],
+   "temporal_emg": [
+    "FT7",
+    "FT8",
+    "T7",
+    "T8",
+    "TP7",
+    "TP8"
+   ],
+   "central_motor": [
+    "FC3",
+    "FC4",
+    "C1",
+    "Cz",
+    "C2",
+    "C3",
+    "C4",
+    "CP1",
+    "CP2"
+   ],
+   "parietal_occipital": [
+    "P7",
+    "P3",
+    "Pz",
+    "P4",
+    "P8",
+    "PO7",
+    "PO3",
+    "PO4",
+    "PO8",
+    "Oz"
+   ]
+  },
+  "deletion_steps": [
+   0,
+   4,
+   8,
+   16,
+   24
+  ],
+  "deletion_random_orders": 10,
+  "unit": "held-out subject",
+  "bootstrap": 2000
+ },
+ "gates": {
+  "H-X0a": "deletion AUC IG order < random order, one-sided Wilcoxon p<0.05, per model x dataset",
+  "H-X0b": "median Spearman(IG trained, IG re-initialised) < 0.5, per model x dataset"
+ },
+ "primary_family": {
+  "correction": "Holm",
+  "alpha": 0.05,
+  "test": "one-sided Wilcoxon signed-rank over held-out subjects",
+  "tests": [
+   {
+    "id": "H-X1",
+    "dataset": "cogbci",
+    "metric": "task-within-level decodability of IG channel maps (logistic regression C=1.0, standardised, trained on other subjects; balanced accuracy averaged over 3 levels)",
+    "direction": "M_prop < M_ref"
+   },
+   {
+    "id": "H-X2a",
+    "dataset": "cmx7",
+    "metric": "temporal_emg share of region occlusion",
+    "direction": "M_prop < M_base"
+   },
+   {
+    "id": "H-X2b",
+    "dataset": "cmx7",
+    "metric": "gamma share of band occlusion",
+    "direction": "M_prop < M_base"
+   },
+   {
+    "id": "H-X3-cmx",
+    "dataset": "cmx7",
+    "metric": "(frontal-theta + parietal_occipital-alpha) / sum over 25 region x band cells",
+    "direction": "M_prop > M_base"
+   },
+   {
+    "id": "H-X3-cog",
+    "dataset": "cogbci",
+    "metric": "same as H-X3-cmx",
+    "direction": "M_prop > M_base"
+   },
+   {
+    "id": "H-X4-cmx",
+    "dataset": "cmx7",
+    "metric": "Spearman(subject mean IG map, mean map of other subjects)",
+    "direction": "M_prop > M_ref"
+   },
+   {
+    "id": "H-X4-cog",
+    "dataset": "cogbci",
+    "metric": "same as H-X4-cmx",
+    "direction": "M_prop > M_ref"
+   }
+  ]
+ },
+ "verdict": {
+  "SUPPORTED": "Holm p<0.05 and H-X0 gates pass",
+  "NOT SUPPORTED": "gates pass, test fails",
+  "NOT EVALUABLE": "a gate fails",
+  "novelty_claim": "made only if H-X1 is SUPPORTED"
+ },
+ "secondary": [
+  "H-X1 on CMx7 (7 tasks, permutation null 100)",
+  "IG vs occlusion agreement",
+  "region shares by task group (CMx7)",
+  "graph v2 attention and learned graphs",
+  "all other model pairs",
+  "rank-biserial r and bootstrap CI"
+ ]
+}
