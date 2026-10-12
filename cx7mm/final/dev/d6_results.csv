@@ -1,0 +1,11 @@
+dataset,model,mean,ci,folds
+cog,v4 = v3 + label smoothing [SWA] (3-seed ens.),0.5517241379310344,"(np.float64(0.517), np.float64(0.586))",29
+cog,v4 seed 0,0.5421455938697318,"(np.float64(0.506), np.float64(0.577))",29
+cog,EEGNet + EA + AdaBN [SWA] (3-seed ens.),0.5689655172413792,"(np.float64(0.534), np.float64(0.603))",29
+cog,EEGNet + EA + AdaBN [SWA] seed 0,0.5536398467432949,"(np.float64(0.519), np.float64(0.586))",29
+cog,(best model of the FINAL run: EEGNet + EA + AdaBN (3-seed ensemble)),0.5344827586206896,None,29
+cmx7,v4 = v3 + label smoothing [SWA] (3-seed ens.),0.5046035754369087,"(np.float64(0.46), np.float64(0.548))",30
+cmx7,v4 seed 0,0.5258561808561809,"(np.float64(0.479), np.float64(0.572))",30
+cmx7,EEGNet + EA + AdaBN [SWA] (3-seed ens.),0.4885806477473144,"(np.float64(0.438), np.float64(0.539))",30
+cmx7,EEGNet + EA + AdaBN [SWA] seed 0,0.49772085938752597,"(np.float64(0.455), np.float64(0.541))",30
+cmx7,(best model of the FINAL run: EEGNet + EA + AdaBN (3-seed ensemble)),0.46796296296296297,None,30
