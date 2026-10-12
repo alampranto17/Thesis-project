@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "fold_id": "loso_21",
+    "model": "ShallowConvNet",
+    "best_epoch": 7,
+    "val_bal_acc": 0.4559440559440559,
+    "test_bal_acc": 0.4166666666666667,
+    "dataset": "cmx7"
+  },
+  "finished": "2026-10-12T04:55:35.305076+00:00"
+}
