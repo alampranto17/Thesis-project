@@ -1,0 +1,13 @@
+{
+  "dataset": "cmx7",
+  "key": "f_shallow",
+  "fold_id": "loso_28",
+  "val_bal_acc": 0.3505747126436782,
+  "val_bal_acc_center": 0.3858784893267652,
+  "train_loss_first": 1.251393082596007,
+  "train_loss_last": 0.767189948331742,
+  "epochs": 20,
+  "averaged": 8,
+  "bn_layers": 1,
+  "finished_utc": "2026-10-13T19:13:00.359387+00:00"
+}
