@@ -1,0 +1,9 @@
+{
+  "dataset": "cog",
+  "candidate": "v5_im",
+  "seed": 0,
+  "fold_id": "loso_18",
+  "val_bal_acc": 0.513888888888889,
+  "val_bal_acc_center": 0.5972222222222222,
+  "finished_utc": "2026-10-13T09:21:37.262479+00:00"
+}
