@@ -1,0 +1,12 @@
+{
+  "dataset": "cmx7",
+  "candidate": "v5_aug",
+  "seed": 0,
+  "fold_id": "loso_10",
+  "val_bal_acc": 0.44195156695156695,
+  "val_bal_acc_center": 0.4351851851851852,
+  "train_loss_last": 2.555027854776828,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-13T09:35:47.380590+00:00"
+}
