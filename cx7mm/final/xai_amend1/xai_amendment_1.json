@@ -1,0 +1,12 @@
+{
+  "amendment": {
+    "amendment": 1,
+    "date": "2026-10-13",
+    "reason": "pre-registered run: all 7 primary tests NOT EVALUABLE; H-X0b median rho 0.9875-0.9879 for EA models, H-X0a failed; zero-occlusion before EA off-manifold (region occlusion -> p = 0.50, shares 0.20); IG dominated by raw amplitude",
+    "change": "EA models explained w.r.t. the EA-aligned network input x = R^-1/2 (u - mean_t u); IG baseline and occlusion value 0 in that space; M_base unchanged (z-scored input)",
+    "unchanged": "models, weights, windows, target, IG steps, regions, bands, deletion steps, gates, hypotheses, tests, Holm",
+    "status": "exploratory; written after the pre-registered results were known; does not change the pre-registered verdicts",
+    "outputs": "final/xai_amend1/"
+  },
+  "written_utc": "2026-10-13T13:10:42.592139+00:00"
+}
