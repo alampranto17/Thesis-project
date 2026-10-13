@@ -1,0 +1,4 @@
+run,fold_bal_acc_mean,reference,reference_fold_mean,delta_vs_reference,wilcoxon_p_vs_reference
+"EEGNet, recording_scaled input",0.419,"EEGNet, train_global (Section 14)",0.452,-0.033,0.394
+"final model, recording_scaled input (no subject alignment)",0.357,"final model v2, subject_zscore",0.349,0.009,0.649
+"  (same, vs v1 train_global seed 0)",0.357,v1 train_global seed 0,0.333,0.024,0.317

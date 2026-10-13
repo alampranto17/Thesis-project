@@ -1,0 +1,4 @@
+role,observed,null_mean,null_95th,p_perm
+EEGNet,0.2741,0.267,0.3038,0.3168
+APNet,0.2283,0.2621,0.3026,0.9505
+EEGNet + EA + AdaBN [SWA],0.2513,0.2634,0.3001,0.7129

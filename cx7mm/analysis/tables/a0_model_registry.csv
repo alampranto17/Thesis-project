@@ -1,0 +1,15 @@
+model,family,source,parameters (prediction),year,seeds,input
+APNet (proposed),proposed,"APNet run (Kaggle), locked on validation (lock file v4_lock.json)","3,595 (36,109 while training)",2026,"0, 1000, 2000",EA + test-time AdaBN
+EEGNet + EA + AdaBN [SWA],alignment,"APNet run, same protocol as APNet without IG-TCAI / ranking / smoothing","3,595",—,"0, 1000, 2000",EA + AdaBN
+EEGNet + EA + AdaBN,alignment,"FINAL run, early stopping","3,595",—,"0 (+1000, 2000 ensemble)",EA + AdaBN
+v3 (earlier version),alignment,"FINAL run: EA + IG-TCAI + ranking + AdaBN, early stopping","3,595",—,0 (+ensemble),EA + AdaBN
+EEGNet,other,FINAL run (Lawhern et al.),"3,595",2018,0,training-fold z-score
+EEGNet + TCAI,other,FINAL run,"3,595",—,0,training-fold z-score
+IG-TCAI (EEGNet),other,FINAL run,"3,595",—,0,training-fold z-score
+ShallowConvNet,recent,"FINAL run, braindecode defaults","59,643",2017,0,training-fold z-score
+EEG-Conformer,recent,"FINAL run, braindecode defaults","805,539",2023,0,training-fold z-score
+"CBraMod, linear probe",recent,"FINAL run, pre-trained foundation model, frozen","5,000,803 (76,803 trained)",2025,0,training-fold z-score
+"CBraMod, fine-tuned",recent,"FINAL run, pre-trained foundation model","5,000,803",2025,0,training-fold z-score
+Riemann TS-LR / RC-TS-LR,riemann,DEV_v5: tangent space + logistic regression (RC = per-subject re-centring),"1,587",classic,deterministic,none / per-subject re-centring
+"Graph models A/B/C, v2",other,COG-BCI: FINAL run; CMx7-MM: development notebook (Colab),"38,239–93,963",—,0,z-score / subject z-score
+Task-only lookup (no EEG),task,predicts the training-fold majority label of the task name,0,—,—,—

@@ -1,0 +1,4 @@
+session,mean_KSS,mean_rating,recordings,bal_acc task name only (no EEG),bal_acc EEGNet,bal_acc EEGNet + TCAI,bal_acc Final model v2
+ses-01,3.49,4.4,176,0.791,0.403,0.397,0.363
+ses-02,4.34,4.29,166,0.751,0.497,0.526,0.404
+ses-03,5.11,4.45,172,0.688,0.485,0.513,0.403

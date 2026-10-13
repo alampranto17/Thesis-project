@@ -1,0 +1,12 @@
+test,mean_diff,ci,wins,losses,p_one_sided,met,p_two_sided
+H-S1 A(L0) > A(L2)  [manipulation],0.1407,"(np.float64(0.089), np.float64(0.193))",12,0,0.0011,True,
+H-S2 C(L1) > A(L1)  [primary N1],0.0185,"(np.float64(-0.015), np.float64(0.048))",6,1,0.0862,False,
+H-S3 gain(L1) > gain(L2)  [shape],-0.0037,"(np.float64(-0.07), np.float64(0.052))",6,5,0.2518,False,
+(report) C - A at L0_crossed,-0.0444,"(np.float64(-0.1), np.float64(0.011))",4,8,,,0.1808
+(report) C - B at L0_crossed,0.0111,"(np.float64(-0.022), np.float64(0.041))",7,3,,,0.5733
+(report) B - A at L0_crossed,-0.0556,"(np.float64(-0.119), np.float64(0.004))",4,7,,,0.1088
+(report) C - B at L1_correlated,-0.0037,"(np.float64(-0.048), np.float64(0.037))",4,3,,,0.9314
+(report) B - A at L1_correlated,0.0222,"(np.float64(-0.026), np.float64(0.067))",5,1,,,0.2918
+(report) C - A at L2_collinear,0.0222,"(np.float64(-0.011), np.float64(0.059))",5,4,,,0.3385
+(report) C - B at L2_collinear,0.0148,"(np.float64(-0.007), np.float64(0.037))",6,3,,,0.1303
+(report) B - A at L2_collinear,0.0074,"(np.float64(-0.022), np.float64(0.041))",4,6,,,0.8776

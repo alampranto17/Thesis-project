@@ -1,0 +1,5 @@
+strategy,class_counts,cramers_v_task
+S1 fixed bins 1-3 / 4-6 / 7-9,"{'low': 238, 'medium': 117, 'high': 159}",0.689
+S2 binary fixed (high >= 6),"{'low': 303, 'high': 211}",0.807
+S3 LOSO training-fold tertiles,"{'low': 186, 'medium': 169, 'high': 159}",0.674
+S4 within-subject median split (NOT allowed by §6),"{'low': 291, 'high': 223}",0.829

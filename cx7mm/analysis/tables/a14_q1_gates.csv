@@ -1,0 +1,7 @@
+dataset,role,H-X0b_median_rho pre-reg.,gates_pass pre-reg.,H-X0a_p,H-X0b_median_rho amendment,gates_pass amendment
+CMx7-MM,EEGNet,0.464,False,0.085,0.464,False
+CMx7-MM,APNet,0.988,False,0.001,0.217,True
+CMx7-MM,EEGNet + EA + AdaBN [SWA],0.988,False,0.035,0.255,True
+COG-BCI,EEGNet,0.37,True,0.0,0.37,True
+COG-BCI,APNet,0.988,False,0.0,0.465,True
+COG-BCI,EEGNet + EA + AdaBN [SWA],0.988,False,0.0,0.431,True

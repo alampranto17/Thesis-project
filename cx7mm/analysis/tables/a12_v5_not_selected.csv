@@ -1,0 +1,9 @@
+dataset,"v5 candidate (not selected, seed 0, exploratory)",test fold mean
+CMx7-MM,APNet + Riemannian fusion,0.476
+CMx7-MM,APNet + test-time IM,0.53
+CMx7-MM,APNet + augmentation [SWA],0.473
+CMx7-MM,APNet + augmentation + test-time IM + Riemannian fusion,0.453
+COG-BCI,APNet + Riemannian fusion,0.538
+COG-BCI,APNet + test-time IM,0.525
+COG-BCI,APNet + augmentation [SWA],0.55
+COG-BCI,APNet + augmentation + test-time IM + Riemannian fusion,0.552

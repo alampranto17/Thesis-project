@@ -1,0 +1,14 @@
+model,fold_mean_all_30,fold_mean_without_5_low_amp,change
+task name only (no EEG),0.771,0.789,0.018
+Temporal CNN,0.407,0.415,0.008
+EEGNet,0.452,0.469,0.017
+Fixed-graph GCN,0.423,0.435,0.011
+Static learnable graph,0.405,0.413,0.008
+Dynamic graph,0.41,0.419,0.009
++ graph consistency,0.424,0.436,0.012
++ subject adversary,0.41,0.438,0.029
++ plain task GRL,0.364,0.383,0.019
++ TCAI (flatten head),0.322,0.334,0.011
+Full model v1 (seed ensemble),0.324,0.316,-0.008
+Full model v2 (subject_zscore),0.349,0.338,-0.01
+Full model v2 (subject_euclid),0.324,0.329,0.005

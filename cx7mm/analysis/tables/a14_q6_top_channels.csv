@@ -1,0 +1,7 @@
+dataset,model,top-3 channels
+CMx7-MM,APNet,"Oz, FC3, Fz"
+CMx7-MM,EEGNet + EA + AdaBN [SWA],"FC3, Oz, P7"
+CMx7-MM,EEGNet,"C2, C1, FC3"
+COG-BCI,APNet,"Oz, Fz, FT8"
+COG-BCI,EEGNet + EA + AdaBN [SWA],"Oz, Fz, FP2"
+COG-BCI,EEGNet,"Oz, PO7, FT8"

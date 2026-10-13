@@ -1,0 +1,8 @@
+task,APNet (3-seed),EEGNet,task-only lookup
+task-mentalarithmetic,0.329,0.276,0.566
+task-nback,0.337,0.267,0.674
+task-nbackarithmetic,0.562,0.452,0.74
+task-full,0.675,0.481,0.896
+task-activemotor,0.597,0.522,0.881
+task-motorimagery,0.446,0.422,0.639
+task-passivemotor,0.615,0.731,0.923

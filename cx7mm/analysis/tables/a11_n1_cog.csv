@@ -1,0 +1,5 @@
+model,COG-BCI fold mean
+EEGNet,0.475
+EEGNet + plain task GRL,0.469
+EEGNet + TCAI,0.466
+IG-TCAI (EEGNet),0.456

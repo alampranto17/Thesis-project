@@ -1,0 +1,9 @@
+dataset,comparison,metric,mean diff,p (two-sided)
+CMx7-MM,APNet − EEGNet + EA + AdaBN [SWA],temporal_share,0.0127,0.1981
+CMx7-MM,APNet − EEGNet,temporal_share,0.0455,0.0293
+CMx7-MM,APNet − EEGNet + EA + AdaBN [SWA],gamma_share,-0.0178,0.0327
+CMx7-MM,APNet − EEGNet,gamma_share,0.0807,0.0
+COG-BCI,APNet − EEGNet + EA + AdaBN [SWA],temporal_share,-0.0028,0.4169
+COG-BCI,APNet − EEGNet,temporal_share,-0.0349,0.0203
+COG-BCI,APNet − EEGNet + EA + AdaBN [SWA],gamma_share,-0.01,0.0308
+COG-BCI,APNet − EEGNet,gamma_share,0.014,0.076

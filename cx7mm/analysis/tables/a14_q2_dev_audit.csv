@@ -1,0 +1,3 @@
+model,frontal_polar_occlusion_ratio,temporal_occlusion_ratio,top_band,EMG_warning,eye_warning
+EEGNet,0.947,0.698,delta,False,False
+Final model v2,0.774,0.89,beta,False,False

@@ -1,0 +1,7 @@
+dataset,role,median_spearman_IG_vs_occlusion
+CMx7-MM,EEGNet,0.393
+CMx7-MM,APNet,0.519
+CMx7-MM,EEGNet + EA + AdaBN [SWA],0.535
+COG-BCI,EEGNet,0.38
+COG-BCI,APNet,0.518
+COG-BCI,EEGNet + EA + AdaBN [SWA],0.542

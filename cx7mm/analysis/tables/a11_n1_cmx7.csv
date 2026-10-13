@@ -1,0 +1,4 @@
+model,fold_bal_acc_mean,macro_f1,mean_within_task_rho
+A EEGNet,0.452,0.448,-0.041
+B EEGNet + plain GRL,0.459,0.45,-0.076
+C EEGNet + TCAI,0.421,0.428,-0.092

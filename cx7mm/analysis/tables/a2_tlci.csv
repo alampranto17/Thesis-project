@@ -1,0 +1,7 @@
+dataset,level,TLCI,shortcut
+COG-BCI sweep,L0_crossed,0.0,0.0
+COG-BCI sweep,L1_correlated,0.36,0.227
+COG-BCI sweep,L2_collinear,1.0,0.579
+COG-BCI (all recordings),natural,0.0,0.0
+CMx7-MM,natural (label = rating tertile),0.264,0.466
+CMx7-MM,natural (TCAI condition = rating),0.333,0.31

@@ -1,0 +1,17 @@
+contribution,claim,evidence,status
+N2,Subjective workload in CMx7-MM is largely task identity,task explains 76.5% of rating variance; task-only lookup 0.771 > every EEG model,SUPPORTED
+N2,EEGNet's accuracy comes from task-level structure,within-task permutation 0.452 → 0.438 (p = 0.99),SUPPORTED
+N3,First cross-subject and cross-session benchmark on CMx7-MM,20 EEG models on 30 LOSO folds + cross-session + COG-BCI,SUPPORTED
+N1,Task–label collinearity degrades cross-subject decoding,"sweep: EEGNet 0.481 → 0.341 (H-S1, p = 0.001)",SUPPORTED
+N1,TCAI helps under partial collinearity,"sweep H-S2: +0.019, p = 0.086",TREND ONLY
+N1,TCAI improves accuracy on CMx7-MM / COG-BCI,pre-registered N1 tests not met on either dataset,NOT SUPPORTED
+N1,IG-TCAI is non-inferior to EEGNet on CMx7-MM,H-IG-NI met (p = 0.032),SUPPORTED
+APNet,Highest mean balanced accuracy on CMx7-MM,"seed 0 0.526, 3-seed 0.505; 3-seed ranks 1 among all other models",SUPPORTED (descriptive)
+APNet,Significantly better than recent models on CMx7-MM,"4/4 recent models, Holm p < 0.05 (post-hoc)",SUPPORTED (exploratory)
+APNet,Better than recent models on COG-BCI,"higher means, 0/4 significant",NOT SUPPORTED (means only)
+APNet,APNet's own components beat the same pipeline without them,COG-BCI -0.017 (p_holm = 0.93); CMx7-MM +0.016 (p_holm = 0.32),NOT SUPPORTED
+Graph proposal,Dynamic sparse graphs + adversaries improve on a compact CNN,best graph model 0.424 vs EEGNet 0.452 (same run); full proposals near chance,NOT SUPPORTED (led to APNet)
+Graph proposal,Learned graphs reflect workload,largest high-vs-low edge change 0.0128; features identify the person (probe 0.82),NOT SUPPORTED
+XAI,Explanations pass sanity checks (randomisation + deletion),pre-registered run failed for aligned models; amendment passes for APNet on both datasets,SUPPORTED (exploratory amendment)
+XAI,APNet relies more on frontal θ + parietal α than EEGNet (COG-BCI),"0.178 vs 0.107, H-X3-cog",SUPPORTED (exploratory amendment)
+XAI,APNet's explanations are less task-specific,H-X1 not supported in either run,NOT SUPPORTED

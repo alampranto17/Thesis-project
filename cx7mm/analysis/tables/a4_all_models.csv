@@ -1,0 +1,40 @@
+stage,model,what it tried,parameters,CMx7-MM,COG-BCI,"Δ vs EEGNet (same run, CMx7)","one-class folds (CMx7, /30)",note
+1 Development: graph proposal (CMx7-MM),Temporal CNN,multi-scale temporal CNN (first plan),"78,699",0.407,—,-0.044,8,
+1 Development: graph proposal (CMx7-MM),EEGNet,compact reference CNN,"3,595",0.452,—,+0.000,8,
+1 Development: graph proposal (CMx7-MM),Fixed-graph GCN,GCN on a fixed scalp-neighbour graph,"81,931",0.423,—,-0.028,9,
+1 Development: graph proposal (CMx7-MM),Static learnable graph,one learned graph for all windows,not recorded,0.405,—,-0.047,7,
+1 Development: graph proposal (CMx7-MM),Dynamic graph,a new sparse graph for every 4-s window (core idea),"83,052",0.410,—,-0.041,8,
+1 Development: graph proposal (CMx7-MM),Graph + graph consistency,graphs of the same class pulled together,"83,052",0.424,—,-0.027,8,
+1 Development: graph proposal (CMx7-MM),Graph + subject adversary,gradient reversal removes person identity,"83,052",0.410,—,-0.042,9,
+1 Development: graph proposal (CMx7-MM),Graph + plain task GRL,gradient reversal removes task identity,"83,052",0.364,—,-0.088,10,
+1 Development: graph proposal (CMx7-MM),Graph + TCAI (flatten head),task-conditional adversary (N1),"83,052",0.322,—,-0.129,9,
+1 Development: graph proposal (CMx7-MM),Full model v1 (seed ensemble),+ attention pooling = original proposal v1,"27,328",0.324,—,-0.127,17,original thesis proposal
+1 Development: graph proposal (CMx7-MM),Full model v2 (subject_zscore),v1 + per-subject z-score,"38,239",0.349,—,-0.103,12,original thesis proposal
+1 Development: graph proposal (CMx7-MM),Full model v2 (subject_euclid),v1 + per-subject Euclidean alignment,"38,239",0.324,—,-0.128,11,original thesis proposal
+1 Development: graph proposal (CMx7-MM),EEGNet + plain GRL,EEGNet + gradient reversal on task,"3,595",0.459,—,+0.007,10,N1 test on CMx7-MM
+1 Development: graph proposal (CMx7-MM),EEGNet + TCAI,EEGNet + task-conditional adversary (N1),"3,595",0.421,—,-0.031,11,N1 test on CMx7-MM
+2 FINAL run (both datasets),EEGNet,Lawhern et al. 2018,"3,595",0.428,0.475,+0.000,8,
+2 FINAL run (both datasets),EEGNet + TCAI,N1 on both datasets,"3,595",0.408,0.466,-0.020,9,
+2 FINAL run (both datasets),IG-TCAI (EEGNet),adversary strength scaled by 1 − TLCI,"3,595",0.417,0.456,-0.011,8,
+2 FINAL run (both datasets),EEGNet + EA + AdaBN · seed 0,Euclidean alignment + test-time AdaBN,"3,595",0.427,0.527,-0.001,2,
+2 FINAL run (both datasets),v3 (earlier version) · seed 0,EA + IG-TCAI + ranking + AdaBN,"3,595",0.432,0.523,+0.004,2,
+2 FINAL run (both datasets),ShallowConvNet,Schirrmeister et al. 2017,"59,643",0.365,0.494,-0.063,8,
+2 FINAL run (both datasets),EEG-Conformer,Song et al. 2023 (CNN + transformer),"805,539",0.403,0.521,-0.025,13,
+2 FINAL run (both datasets),"CBraMod, linear probe","EEG foundation model 2025, frozen","5,000,803 (76,803 trained)",0.445,0.506,+0.017,8,
+2 FINAL run (both datasets),"CBraMod, fine-tuned","EEG foundation model 2025, fine-tuned","5,000,803",0.391,0.523,-0.037,9,
+2 FINAL run (both datasets),EEGNet + EA + AdaBN · 3-seed,"same, 3-seed ensemble","3,595",0.468,0.534,+0.040,—,
+2 FINAL run (both datasets),v3 (earlier version) · 3-seed,"same, 3-seed ensemble","3,595",0.463,0.533,+0.035,—,
+2 FINAL run (both datasets),EEGNet + plain task GRL,EEGNet + gradient reversal on task,"3,595",—,0.469,—,—,COG-BCI only in FINAL (CMx7: stage 1)
+2 FINAL run (both datasets),"Graph A (+consistency, +subject adversary)",dynamic graph + consistency + subject adversary,"89,097",—,0.496,—,—,COG-BCI only in FINAL (CMx7: stage 1)
+2 FINAL run (both datasets),Graph B (+plain task GRL),Graph A + plain task GRL,"93,387",—,0.496,—,—,COG-BCI only in FINAL (CMx7: stage 1)
+2 FINAL run (both datasets),Graph C (+TCAI),Graph A + TCAI,"93,963",—,0.443,—,—,COG-BCI only in FINAL (CMx7: stage 1)
+2 FINAL run (both datasets),Graph model v2 (earlier proposal),"the original proposal, v2","38,239",—,0.439,—,—,COG-BCI only in FINAL (CMx7: stage 1)
+3 Final model: APNet,EEGNet + EA + AdaBN [SWA] · 3-seed,"fixed 20 epochs, last 8 averaged (SWA)","3,595",0.489,0.569,+0.061,0,
+3 Final model: APNet,APNet (proposed) · seed 0,SWA pipeline + IG-TCAI + within-task ranking + label smoothing,"3,595 (36,109 while training)",0.526,0.542,+0.098,0,"final model, locked on validation"
+3 Final model: APNet,APNet (proposed) · 3-seed,SWA pipeline + IG-TCAI + within-task ranking + label smoothing,"3,595 (36,109 while training)",0.505,0.552,+0.077,0,"final model, locked on validation"
+4 Challengers to APNet,Riemann TS-LR,covariance → tangent space → logistic regression,"1,587",0.372,0.487,-0.056,13,
+4 Challengers to APNet,Riemann RC-TS-LR,covariance → tangent space → logistic regression (+ per-subject re-centring),"1,587",0.446,0.510,+0.017,0,
+4 Challengers to APNet,APNet + Riemannian fusion,v5 candidate (literature-based add-on),"3,595",0.476,0.538,+0.048,—,NOT selected (lost on validation); exploratory
+4 Challengers to APNet,APNet + test-time IM,v5 candidate (literature-based add-on),"3,595",0.530,0.525,+0.102,—,NOT selected (lost on validation); exploratory
+4 Challengers to APNet,APNet + augmentation [SWA],v5 candidate (literature-based add-on),"3,595",0.473,0.550,+0.045,—,NOT selected (lost on validation); exploratory
+4 Challengers to APNet,APNet + augmentation + test-time IM + Riemannian fusion,v5 candidate (literature-based add-on),"3,595",0.453,0.552,+0.025,—,NOT selected (lost on validation); exploratory
