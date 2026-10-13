@@ -1,0 +1,7 @@
+dataset,role,median_spearman_IG_vs_occlusion
+cmx7,M_base,0.3933284457478005
+cmx7,M_prop,0.46333294654582763
+cmx7,M_ref,0.30967344557379406
+cog,M_base,0.3804985337243401
+cog,M_prop,0.2932686046869767
+cog,M_ref,0.2628299120234604
