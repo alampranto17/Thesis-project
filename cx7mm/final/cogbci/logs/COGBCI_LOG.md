@@ -32,3 +32,16 @@ FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/working/final/c
 - 2026-10-13T08:06:22.701239+00:00 [E2] 522 recordings, 29 subjects
 - 2026-10-13T13:03:08.399314+00:00 [E2] 522 recordings, 29 subjects
 - 2026-10-13T18:50:30.078685+00:00 [E2] 522 recordings, 29 subjects
+- 2026-10-13T23:44:06.229077+00:00 [F error] cog ('f_conformer', 'loso_24'): aders["train"]:
+             ~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py", line 741, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py", line 1524, in _next_data
+    idx, data = self._get_data()
+                ~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py", line 1468, in _get_data
+    raise RuntimeError(
+        f"DataLoader timed out after {self._timeout} seconds"
+    )
+RuntimeError: DataLoader timed out after 300 seconds
+
