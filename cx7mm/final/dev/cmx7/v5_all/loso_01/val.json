@@ -1,0 +1,9 @@
+{
+  "dataset": "cmx7",
+  "candidate": "v5_all",
+  "seed": 0,
+  "fold_id": "loso_01",
+  "val_bal_acc": 0.44115076964441763,
+  "val_bal_acc_center": 0.37786516098675804,
+  "finished_utc": "2026-10-13T09:53:47.499776+00:00"
+}
