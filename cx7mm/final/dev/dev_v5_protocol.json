@@ -1,0 +1,82 @@
+{
+  "rule": {
+    "status": "post-hoc development round designed on 13 Oct 2026 after the v4 test results were known; validation-only selection; test sealed until the lock; exploratory; LAST round (no v6)",
+    "riemann": {
+      "windows": "every valid 4 s window (32 x 1000 at 250 Hz) of the minimally pre-processed arrays, channels centred over time",
+      "covariance": "pyriemann Covariances(estimator='oas')",
+      "rm_tslr": "tangent space (log map, upper triangle, off-diagonal x sqrt 2) at the Riemannian mean of 2000 seeded training windows",
+      "rm_rctslr": "each subject re-centred by its own Riemannian mean over all its valid windows (label-free), tangent space at identity",
+      "classifier": "StandardScaler + LogisticRegression(C=1.0, class_weight='balanced', max_iter=3000)",
+      "training_windows": "training subjects only; at most 40 windows per training recording, seeded",
+      "prediction": "recording probability = mean of window probabilities; baseline decision = argmax (no score centring)"
+    },
+    "augmentation": {
+      "ft_surrogate": {
+        "probability": 0.5,
+        "phase_noise_magnitude": 1.0,
+        "channel_indep": false
+      },
+      "channels_dropout": {
+        "probability": 0.5,
+        "p_drop": 0.2
+      },
+      "source": "braindecode default parameters (not tuned); Rommel et al. 2022",
+      "where": "training batches only, after EA, seeded per fold"
+    },
+    "test_time_im": {
+      "loss": "mean per-window entropy minus entropy of the mean prediction (information maximisation; SHOT 2020, T-TIME 2023)",
+      "parameters": "batch-norm affine parameters only",
+      "optimizer": "Adam, lr 1e-3",
+      "passes": 1,
+      "batch": 64,
+      "order": "AdaBN on the subject's windows, then IM on the same windows, then prediction; every subject separately; no labels"
+    },
+    "candidates": {
+      "v5_fus": {
+        "name": "v4 + Riemannian fusion",
+        "deep": "d_v3_ls",
+        "fuse": "rm_rctslr"
+      },
+      "v5_im": {
+        "name": "v4 + test-time IM",
+        "deep": "v5_im",
+        "source": "d_v3_ls",
+        "im": true
+      },
+      "v5_aug": {
+        "name": "v4 + augmentation [SWA]",
+        "deep": "v5_aug",
+        "model": "igtcai",
+        "rank": 0.5,
+        "label_smoothing": 0.1,
+        "augment": true
+      },
+      "v5_all": {
+        "name": "v4 + augmentation + test-time IM + Riemannian fusion",
+        "deep": "v5_all",
+        "source": "v5_aug",
+        "im": true,
+        "fuse": "rm_rctslr"
+      }
+    },
+    "fusion": "p = normalised exp(0.5 log p_deep + 0.5 log p_riemann), per recording",
+    "swa": {
+      "epochs": 20,
+      "last": 8,
+      "seeds": [
+        0,
+        1000,
+        2000
+      ]
+    },
+    "selection_rule": "score = mean over the two datasets of the fold-mean VALIDATION balanced accuracy (seed 0), each dataset with its test-time option (none / center) chosen on validation. v5 = the candidate with the highest score, and it replaces v4 only if its score is higher than v4's score computed the same way; otherwise v5 = v4 (no change). Ties -> the simpler candidate (v5_fus, v5_im, v5_aug, v5_all).",
+    "tests": {
+      "H-V5": "v5 (3-seed) > v4 (3-seed), one-sided Wilcoxon over held-out subjects, Holm over the 2 datasets",
+      "H-V5-tricks": "v5 (3-seed) > EEGNet + EA + AdaBN [SWA] (3-seed), one-sided Wilcoxon, Holm over the 2 datasets",
+      "H-V5-best": "v5 (3-seed) > the best other model of the benchmark on that dataset (highest fold mean among FINAL, DEV_v4 and the Riemannian baselines), one-sided Wilcoxon, Holm over the 2 datasets",
+      "best-model rule": "v5 is called 'best' on a dataset only if its fold mean is the highest of all models AND H-V5-best is met there",
+      "Riemannian baselines": "reported in the table; compared descriptively (two-sided) with EEGNet, EEGNet + EA + AdaBN [SWA] and v4"
+    }
+  },
+  "saved_utc": "2026-10-13T08:12:35.763359+00:00"
+}
