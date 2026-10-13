@@ -1,0 +1,27 @@
+{
+  "rule": {
+    "status": "post-hoc robustness check designed on 14 Oct 2026 after the benchmark was known; APNet unchanged; all outcomes reported",
+    "models": {
+      "f_shallow": "shallowconvnet",
+      "f_cbra_probe": "cbramod_probe",
+      "f_conformer": "eegconformer",
+      "f_cbra_ft": "cbramod_finetune"
+    },
+    "protocol": {
+      "input": "EA (R^-1/2 of the subject's label-free mean covariance of up to 300 windows), as d_tricks / APNet",
+      "training": "SWA 20 epochs, average of the last 8; AdamW lr 0.001, wd 0.01, batch 64, class-weighted CE, AMP; CBraMod fine-tune backbone lr x 0.1",
+      "test_time": "AdaBN per subject (no-op without batch-norm) + option none/center chosen per (model, dataset) on validation",
+      "not_given": "IG-TCAI, within-task ranking, label smoothing (APNet's own components)",
+      "seed": 0
+    },
+    "apnet": "seed-0 sealed predictions of d_v3_ls with the option locked in v4_lock.json (not retrained)",
+    "tests": {
+      "H-F1 (primary)": "per dataset: APNet (seed 0) vs each recent model under the APNet protocol (seed 0); two-sided Wilcoxon over held-out subjects; Holm over the 4 recent models within the dataset; alpha 0.05",
+      "statement rule": "'APNet outperforms X under equal conditions on D' only if Holm p < 0.05 and the mean difference > 0; 'X outperforms APNet' only if Holm p < 0.05 and the mean difference < 0; otherwise 'no significant difference'",
+      "H-F2 (descriptive)": "each recent model: APNet protocol vs its default FINAL run (two-sided Wilcoxon, no claim): does the protocol help it?",
+      "also reported": "APNet 3-seed and EEGNet + EA + AdaBN [SWA] 3-seed for reference (no test)"
+    },
+    "selection": "only the score option of each recent model is chosen, on validation subjects, before the test is read"
+  },
+  "saved_utc": "2026-10-13T18:52:43.776355+00:00"
+}
