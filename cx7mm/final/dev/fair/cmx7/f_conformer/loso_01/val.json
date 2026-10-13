@@ -1,0 +1,13 @@
+{
+  "dataset": "cmx7",
+  "key": "f_conformer",
+  "fold_id": "loso_01",
+  "val_bal_acc": 0.25633528265107214,
+  "val_bal_acc_center": 0.3398870740068562,
+  "train_loss_first": 1.1308253557882577,
+  "train_loss_last": 0.7767549318687939,
+  "epochs": 20,
+  "averaged": 8,
+  "bn_layers": 1,
+  "finished_utc": "2026-10-13T19:56:10.341612+00:00"
+}
