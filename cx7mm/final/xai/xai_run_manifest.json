@@ -1,0 +1,98 @@
+{
+  "verified_utc": "2026-10-13T06:54:33.542358+00:00",
+  "prereg_sha256": {
+    "xai_prereg.json": "b1d4400f2f7d1c6f18213daaccfc7df678591b2d589cb4f1dc3601c20b78abdf",
+    "XAI_PREREGISTRATION.md": "232bdfb25365b18d89d8b1286c3015bd20bf291439f69276a03e270ac17b2399"
+  },
+  "settings": {
+    "windows": 6,
+    "ig_steps": 16,
+    "bands": {
+      "delta": [
+        1,
+        4
+      ],
+      "theta": [
+        4,
+        8
+      ],
+      "alpha": [
+        8,
+        13
+      ],
+      "beta": [
+        13,
+        30
+      ],
+      "gamma": [
+        30,
+        40
+      ]
+    },
+    "regions": {
+      "frontal_polar_eye": [
+        "FP1",
+        "FP2",
+        "F7",
+        "F8"
+      ],
+      "frontal": [
+        "F3",
+        "Fz",
+        "F4"
+      ],
+      "temporal_emg": [
+        "FT7",
+        "FT8",
+        "T7",
+        "T8",
+        "TP7",
+        "TP8"
+      ],
+      "central_motor": [
+        "FC3",
+        "FC4",
+        "C1",
+        "Cz",
+        "C2",
+        "C3",
+        "C4",
+        "CP1",
+        "CP2"
+      ],
+      "parietal_occipital": [
+        "P7",
+        "P3",
+        "Pz",
+        "P4",
+        "P8",
+        "PO7",
+        "PO3",
+        "PO4",
+        "PO8",
+        "Oz"
+      ]
+    },
+    "del_steps": [
+      0,
+      4,
+      8,
+      16,
+      24
+    ],
+    "del_random": 10,
+    "n_boot": 2000,
+    "alpha": 0.05,
+    "seed": 42,
+    "chunk": 384
+  },
+  "roles": {
+    "M_prop": "d_v3_ls",
+    "M_ref": "d_tricks",
+    "M_base": "eegnet_s0"
+  },
+  "folds": {
+    "cog": 29,
+    "cmx7": 30
+  }
+}
