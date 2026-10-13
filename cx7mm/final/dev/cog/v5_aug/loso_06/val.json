@@ -1,0 +1,12 @@
+{
+  "dataset": "cog",
+  "candidate": "v5_aug",
+  "seed": 0,
+  "fold_id": "loso_06",
+  "val_bal_acc": 0.5138888888888888,
+  "val_bal_acc_center": 0.5416666666666666,
+  "train_loss_last": 1.9589698502311,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-13T09:00:32.330449+00:00"
+}
