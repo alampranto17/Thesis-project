@@ -1,0 +1,44 @@
+dataset,model,fold_mean,ci95,folds
+cmx7,"(not selected, seed 0) v4 + test-time IM",0.5299302549302548,"(np.float64(0.476), np.float64(0.583))",30
+cmx7,v4 (3-seed),0.5046035754369087,"(np.float64(0.462), np.float64(0.548))",30
+cmx7,EEGNet + EA + AdaBN [SWA] (3-seed),0.4885806477473144,"(np.float64(0.439), np.float64(0.539))",30
+cmx7,"(not selected, seed 0) v4 + Riemannian fusion",0.476370049703383,"(np.float64(0.42), np.float64(0.531))",30
+cmx7,"(not selected, seed 0) v4 + augmentation [SWA]",0.4726643418310086,"(np.float64(0.417), np.float64(0.531))",30
+cmx7,EEGNet + EA + AdaBN (3-seed ensemble),0.46796296296296297,"(np.float64(0.404), np.float64(0.527))",30
+cmx7,v3 proposed (EA + IG-TCAI + rank + AdaBN) (3-seed ensemble),0.46326799743466407,"(np.float64(0.401), np.float64(0.523))",30
+cmx7,"(not selected, seed 0) v4 + augmentation + test-time IM + Riemannian fusion",0.45287758537758543,"(np.float64(0.396), np.float64(0.509))",30
+cmx7,Riemann RC-TS-LR,0.4455627705627706,"(np.float64(0.384), np.float64(0.506))",30
+cmx7,"CBraMod (frozen, linear probe)",0.4451402918069584,"(np.float64(0.401), np.float64(0.495))",30
+cmx7,v3 proposed (EA + IG-TCAI + rank + AdaBN),0.4322118005451339,"(np.float64(0.377), np.float64(0.485))",30
+cmx7,EEGNet,0.42807679974346635,"(np.float64(0.378), np.float64(0.482))",30
+cmx7,EEGNet + EA + AdaBN,0.4269312169312169,"(np.float64(0.372), np.float64(0.482))",30
+cmx7,"IG-TCAI (EEGNet, N1-M)",0.417159291325958,"(np.float64(0.358), np.float64(0.475))",30
+cmx7,EEGNet + TCAI,0.4076310726310727,"(np.float64(0.353), np.float64(0.464))",30
+cmx7,EEG-Conformer,0.40341991341991346,"(np.float64(0.355), np.float64(0.451))",30
+cmx7,CBraMod (fine-tuned),0.39141654641654644,"(np.float64(0.351), np.float64(0.428))",30
+cmx7,Riemann TS-LR,0.37185545935545944,"(np.float64(0.33), np.float64(0.412))",30
+cmx7,ShallowConvNet,0.3652392977392977,"(np.float64(0.329), np.float64(0.398))",30
+cog,EEGNet + EA + AdaBN [SWA] (3-seed),0.5689655172413792,"(np.float64(0.534), np.float64(0.603))",29
+cog,"(not selected, seed 0) v4 + augmentation + test-time IM + Riemannian fusion",0.5517241379310345,"(np.float64(0.506), np.float64(0.602))",29
+cog,v4 (3-seed),0.5517241379310344,"(np.float64(0.517), np.float64(0.586))",29
+cog,"(not selected, seed 0) v4 + augmentation [SWA]",0.5498084291187738,"(np.float64(0.511), np.float64(0.588))",29
+cog,"(not selected, seed 0) v4 + Riemannian fusion",0.5383141762452107,"(np.float64(0.494), np.float64(0.588))",29
+cog,EEGNet + EA + AdaBN (3-seed ensemble),0.5344827586206896,"(np.float64(0.498), np.float64(0.571))",29
+cog,v3 proposed (EA + IG-TCAI + rank + AdaBN) (3-seed ensemble),0.532567049808429,"(np.float64(0.498), np.float64(0.567))",29
+cog,EEGNet + EA + AdaBN,0.5268199233716474,"(np.float64(0.492), np.float64(0.559))",29
+cog,"(not selected, seed 0) v4 + test-time IM",0.5249042145593869,"(np.float64(0.49), np.float64(0.557))",29
+cog,v3 proposed (EA + IG-TCAI + rank + AdaBN),0.5229885057471264,"(np.float64(0.49), np.float64(0.557))",29
+cog,CBraMod (fine-tuned),0.5229885057471264,"(np.float64(0.481), np.float64(0.565))",29
+cog,EEG-Conformer,0.5210727969348659,"(np.float64(0.483), np.float64(0.561))",29
+cog,Riemann RC-TS-LR,0.5095785440613027,"(np.float64(0.458), np.float64(0.567))",29
+cog,"CBraMod (frozen, linear probe)",0.5057471264367815,"(np.float64(0.456), np.float64(0.561))",29
+cog,Graph A (+consistency +subject adv),0.49616858237547895,"(np.float64(0.462), np.float64(0.534))",29
+cog,Graph B (+plain task GRL),0.4961685823754789,"(np.float64(0.454), np.float64(0.542))",29
+cog,ShallowConvNet,0.4942528735632184,"(np.float64(0.446), np.float64(0.544))",29
+cog,Riemann TS-LR,0.48659003831417624,"(np.float64(0.437), np.float64(0.544))",29
+cog,EEGNet,0.47509578544061304,"(np.float64(0.439), np.float64(0.513))",29
+cog,EEGNet + plain task GRL,0.4693486590038314,"(np.float64(0.435), np.float64(0.506))",29
+cog,EEGNet + TCAI,0.46551724137931033,"(np.float64(0.427), np.float64(0.51))",29
+cog,"IG-TCAI (EEGNet, N1-M)",0.4559386973180077,"(np.float64(0.425), np.float64(0.487))",29
+cog,Graph C (+TCAI),0.4425287356321839,"(np.float64(0.414), np.float64(0.471))",29
+cog,Final model v2 (proposed),0.4386973180076629,"(np.float64(0.398), np.float64(0.483))",29
