@@ -1,0 +1,12 @@
+{
+ "key": "f_cbra_probe",
+ "seed": 0,
+ "fold_id": "loso_11",
+ "val_bal_acc": 0.4584656084656084,
+ "val_bal_acc_center": 0.5494708994708994,
+ "best_epoch": -1,
+ "epochs_run": 20,
+ "loss_first": 1.040324947388052,
+ "loss_last": 0.4490593101480882,
+ "finished_utc": "2026-10-14T08:20:44.142792+00:00"
+}
