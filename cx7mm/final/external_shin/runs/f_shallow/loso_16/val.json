@@ -1,0 +1,12 @@
+{
+ "key": "f_shallow",
+ "seed": 0,
+ "fold_id": "loso_16",
+ "val_bal_acc": 0.6296296296296297,
+ "val_bal_acc_center": 0.6296296296296297,
+ "best_epoch": -1,
+ "epochs_run": 20,
+ "loss_first": 1.0544782833776611,
+ "loss_last": 0.19416437460028607,
+ "finished_utc": "2026-10-14T07:55:22.521603+00:00"
+}
