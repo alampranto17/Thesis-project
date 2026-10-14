@@ -1,0 +1,12 @@
+{
+ "key": "f_conformer",
+ "seed": 0,
+ "fold_id": "loso_19",
+ "val_bal_acc": 0.5801587301587302,
+ "val_bal_acc_center": 0.5621693121693122,
+ "best_epoch": -1,
+ "epochs_run": 20,
+ "loss_first": 1.1322684167957993,
+ "loss_last": 0.6968415143678515,
+ "finished_utc": "2026-10-14T09:18:49.533442+00:00"
+}
