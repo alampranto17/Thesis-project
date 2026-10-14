@@ -1,0 +1,12 @@
+{
+ "key": "d_tricks",
+ "seed": 1000,
+ "fold_id": "loso_25",
+ "val_bal_acc": 0.5925925925925927,
+ "val_bal_acc_center": 0.6203703703703703,
+ "best_epoch": -1,
+ "epochs_run": 20,
+ "loss_first": 1.0866919695025814,
+ "loss_last": 0.7711093208215533,
+ "finished_utc": "2026-10-14T11:59:25.660186+00:00"
+}
