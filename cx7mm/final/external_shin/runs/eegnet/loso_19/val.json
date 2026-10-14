@@ -1,0 +1,12 @@
+{
+ "key": "eegnet",
+ "seed": 0,
+ "fold_id": "loso_19",
+ "val_bal_acc": 0.41507936507936516,
+ "val_bal_acc_center": 0.4849206349206349,
+ "best_epoch": 0,
+ "epochs_run": 7,
+ "loss_first": 1.1037299898888568,
+ "loss_last": 0.9347183451378088,
+ "finished_utc": "2026-10-14T06:57:09.634476+00:00"
+}
