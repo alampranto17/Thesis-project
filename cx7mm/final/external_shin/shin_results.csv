@@ -1,0 +1,10 @@
+model,mean,ci,participants
+APNet (seed 0),0.6153846153846154,"(np.float64(0.578), np.float64(0.65))",26
+ShallowConvNet [APNet protocol] (seed 0),0.6087962962962963,"(np.float64(0.573), np.float64(0.647))",26
+EEGNet + EA + AdaBN [SWA] (seed 0),0.605591168091168,"(np.float64(0.568), np.float64(0.641))",26
+EEGNet + EA + AdaBN [SWA] (3-seed),0.600071225071225,"(np.float64(0.561), np.float64(0.636))",26
+APNet (3-seed),0.5950854700854701,"(np.float64(0.549), np.float64(0.64))",26
+EEG-Conformer [APNet protocol] (seed 0),0.5872507122507122,"(np.float64(0.559), np.float64(0.613))",26
+"CBraMod, fine-tuned [APNet protocol] (seed 0)",0.5516381766381767,"(np.float64(0.511), np.float64(0.59))",26
+"CBraMod, linear probe [APNet protocol] (seed 0)",0.530448717948718,"(np.float64(0.488), np.float64(0.571))",26
+EEGNet (seed 0),0.4075854700854701,"(np.float64(0.369), np.float64(0.449))",26

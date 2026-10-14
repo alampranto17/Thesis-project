@@ -1,0 +1,8 @@
+test,comparison,mean_diff,ci,wins,losses,alternative,p,p_holm,p_final,verdict
+H-E1 (primary),APNet (seed 0) - EEGNet (seed 0),0.20779914529914534,"(np.float64(0.161), np.float64(0.255))",24,1,greater,6.9117369120584015e-06,,6.9117369120584015e-06,SUPPORTED / APNet better
+H-E2,APNet (seed 0) - chance,0.2820512820512821,"(np.float64(0.246), np.float64(0.316))",26,0,greater,4.0118501991435526e-06,,4.0118501991435526e-06,SUPPORTED / APNet better
+H-E3,APNet (seed 0) - ShallowConvNet [APNet protocol],0.006588319088319096,"(np.float64(-0.026), np.float64(0.038))",12,10,two-sided,0.5571135093897743,0.5571135093897743,0.5571135093897743,not significant
+H-E3,"APNet (seed 0) - CBraMod, linear probe [APNet protocol]",0.08493589743589744,"(np.float64(0.042), np.float64(0.135))",19,2,two-sided,0.0006068131952469869,0.0024272527809879475,0.0024272527809879475,SUPPORTED / APNet better
+H-E3,APNet (seed 0) - EEG-Conformer [APNet protocol],0.02813390313390314,"(np.float64(-0.008), np.float64(0.067))",13,9,two-sided,0.16697882207293513,0.33395764414587026,0.33395764414587026,not significant
+H-E3,"APNet (seed 0) - CBraMod, fine-tuned [APNet protocol]",0.06374643874643876,"(np.float64(0.027), np.float64(0.103))",18,6,two-sided,0.0065230566409127414,0.019569169922738223,0.019569169922738223,SUPPORTED / APNet better
+H-E4,APNet (3-seed) - EEGNet + EA + AdaBN [SWA] (3-seed),-0.004985754985755004,"(np.float64(-0.027), np.float64(0.017))",11,12,two-sided,0.4623977553582126,,0.4623977553582126,not significant
