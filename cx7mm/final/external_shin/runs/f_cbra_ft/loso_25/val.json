@@ -1,0 +1,12 @@
+{
+ "key": "f_cbra_ft",
+ "seed": 0,
+ "fold_id": "loso_25",
+ "val_bal_acc": 0.5092592592592593,
+ "val_bal_acc_center": 0.5462962962962963,
+ "best_epoch": -1,
+ "epochs_run": 20,
+ "loss_first": 1.026150921400446,
+ "loss_last": 0.14740528574172598,
+ "finished_utc": "2026-10-14T10:52:39.566972+00:00"
+}
