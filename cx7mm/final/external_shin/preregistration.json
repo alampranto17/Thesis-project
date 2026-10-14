@@ -1,0 +1,71 @@
+{
+ "rule": {
+  "title": "External, confirmatory validation of the locked APNet recipe on Shin et al. (2018) dataset A (n-back)",
+  "status": "confirmatory: APNet was locked on 12 Oct 2026 (v4_lock.json); nothing is tuned on this dataset",
+  "data": {
+   "participants": 26,
+   "series": 699,
+   "channels": [
+    "Fp1",
+    "AFF5h",
+    "AFz",
+    "F1",
+    "FC5",
+    "FC1",
+    "T7",
+    "C3",
+    "Cz",
+    "CP5",
+    "CP1",
+    "P7",
+    "P3",
+    "Pz",
+    "POz",
+    "O1",
+    "Fp2",
+    "AFF6h",
+    "F2",
+    "FC2",
+    "FC6",
+    "C4",
+    "T8",
+    "CP2",
+    "CP6",
+    "P4",
+    "P8",
+    "O2"
+   ],
+   "labels": "0-back = low, 2-back = medium, 3-back = high (designed level)",
+   "unit": "one 40-s task series = one recording",
+   "preprocessing": "EEG channels, flat channels (< 0.5 uV SD) interpolated, 1-40 Hz, 250 Hz, average reference, 3 s excluded at the task start, 4-s windows / 2-s step, windows > 500 uV peak-to-peak rejected"
+  },
+  "folds": "LOSO over all participants; 4 validation participants per fold (seeded rotation, as COG-BCI); test participant never used for choices",
+  "models": {
+   "eegnet": "EEGNet, FINAL protocol (training-fold z-score, early stopping 30/6 on validation, argmax)",
+   "d_tricks": "EEGNet + EA + AdaBN [SWA] (APNet pipeline without APNet's components)",
+   "apnet": "APNet = locked d_v3_ls: EEGNet + IG-TCAI (gamma 0.3 x (1 - TLCI); one task -> TLCI 0) + within-level ranking 0.5 + label smoothing 0.1, EA, SWA 20/8, AdaBN per subject",
+   "f_shallow": "ShallowConvNet under APNet's protocol",
+   "f_conformer": "EEG-Conformer under APNet's protocol",
+   "f_cbra_probe": "CBraMod linear probe under APNet's protocol",
+   "f_cbra_ft": "CBraMod fine-tuned under APNet's protocol"
+  },
+  "seeds": "seed 0 for every model (primary); seeds 1000 and 2000 for apnet and d_tricks (secondary, 3-seed ensembles)",
+  "score_option": "SWA models: none / subject-wise centring chosen per model on validation subjects; EEGNet (FINAL protocol): argmax",
+  "tests": {
+   "H-E1 (primary)": "APNet (seed 0) > EEGNet (seed 0): one-sided Wilcoxon over held-out participants, alpha 0.05",
+   "H-E2": "APNet (seed 0) > chance (1/3): one-sided Wilcoxon",
+   "H-E3": "APNet (seed 0) vs each recent model under APNet's protocol: two-sided Wilcoxon, Holm over 4",
+   "H-E4": "APNet (3-seed) vs EEGNet + EA + AdaBN [SWA] (3-seed): two-sided Wilcoxon (are APNet's components useful here?)",
+   "reporting": "every test is reported whatever its outcome; no model, setting or test is added after this file is saved"
+  },
+  "apnet_recipe_check": {
+   "locked model is d_v3_ls": true,
+   "SWA epochs": true,
+   "SWA last": true,
+   "ranking weight": true,
+   "label smoothing": true,
+   "IG-TCAI backbone": true
+  }
+ },
+ "saved_utc": "2026-10-14T06:48:26.119364+00:00"
+}
