@@ -1,0 +1,12 @@
+{
+ "key": "apnet",
+ "seed": 0,
+ "fold_id": "loso_05",
+ "val_bal_acc": 0.5925925925925926,
+ "val_bal_acc_center": 0.6111111111111112,
+ "best_epoch": -1,
+ "epochs_run": 20,
+ "loss_first": 1.4153422473991004,
+ "loss_last": 1.1103320843982,
+ "finished_utc": "2026-10-14T07:24:53.445618+00:00"
+}
