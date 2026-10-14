@@ -1,0 +1,23 @@
+dataset,model,mean,ci,folds
+cmx7,APNet (seed 0),0.5258561808561809,"(np.float64(0.48), np.float64(0.571))",30
+cmx7,APNet (3-seed),0.5046035754369087,"(np.float64(0.46), np.float64(0.55))",30
+cmx7,EEGNet + EA + AdaBN [SWA] (3-seed),0.4885806477473144,"(np.float64(0.439), np.float64(0.538))",30
+cmx7,ShallowConvNet [APNet protocol],0.4957331248997915,"(np.float64(0.438), np.float64(0.549))",30
+cmx7,"ShallowConvNet [default, FINAL run]",0.3652392977392977,"(np.float64(0.33), np.float64(0.398))",30
+cmx7,"CBraMod (frozen, linear probe) [APNet protocol]",0.44555355138688474,"(np.float64(0.382), np.float64(0.505))",30
+cmx7,"CBraMod (frozen, linear probe) [default, FINAL run]",0.4451402918069584,"(np.float64(0.401), np.float64(0.495))",30
+cmx7,EEG-Conformer [APNet protocol],0.5139738656405323,"(np.float64(0.457), np.float64(0.569))",30
+cmx7,"EEG-Conformer [default, FINAL run]",0.40341991341991346,"(np.float64(0.356), np.float64(0.451))",30
+cmx7,CBraMod (fine-tuned) [APNet protocol],0.46527817861151194,"(np.float64(0.417), np.float64(0.509))",30
+cmx7,"CBraMod (fine-tuned) [default, FINAL run]",0.39141654641654644,"(np.float64(0.351), np.float64(0.428))",30
+cog,APNet (seed 0),0.5421455938697318,"(np.float64(0.506), np.float64(0.577))",29
+cog,APNet (3-seed),0.5517241379310344,"(np.float64(0.517), np.float64(0.588))",29
+cog,EEGNet + EA + AdaBN [SWA] (3-seed),0.5689655172413792,"(np.float64(0.536), np.float64(0.603))",29
+cog,ShallowConvNet [APNet protocol],0.5842911877394635,"(np.float64(0.544), np.float64(0.626))",29
+cog,"ShallowConvNet [default, FINAL run]",0.4942528735632184,"(np.float64(0.446), np.float64(0.544))",29
+cog,"CBraMod (frozen, linear probe) [APNet protocol]",0.5498084291187739,"(np.float64(0.506), np.float64(0.598))",29
+cog,"CBraMod (frozen, linear probe) [default, FINAL run]",0.5057471264367815,"(np.float64(0.454), np.float64(0.559))",29
+cog,EEG-Conformer [APNet protocol],0.5804597701149427,"(np.float64(0.55), np.float64(0.611))",29
+cog,"EEG-Conformer [default, FINAL run]",0.5210727969348659,"(np.float64(0.485), np.float64(0.561))",29
+cog,CBraMod (fine-tuned) [APNet protocol],0.5459770114942529,"(np.float64(0.5), np.float64(0.596))",29
+cog,"CBraMod (fine-tuned) [default, FINAL run]",0.5229885057471264,"(np.float64(0.483), np.float64(0.565))",29

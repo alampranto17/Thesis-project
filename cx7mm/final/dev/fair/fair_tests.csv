@@ -1,0 +1,17 @@
+test,dataset,comparison,mean_diff,ci,wins,losses,p,p_holm,verdict
+H-F2 (descriptive),cmx7,ShallowConvNet: APNet protocol - default,0.13049382716049387,"(np.float64(0.073), np.float64(0.186))",25,5,0.0002943535696072254,,
+H-F2 (descriptive),cmx7,"CBraMod (frozen, linear probe): APNet protocol - default",0.000413259579926258,"(np.float64(-0.073), np.float64(0.067))",15,15,0.6883514902795522,,
+H-F2 (descriptive),cmx7,EEG-Conformer: APNet protocol - default,0.1105539522206189,"(np.float64(0.055), np.float64(0.17))",22,7,0.0019861301962163817,,
+H-F2 (descriptive),cmx7,CBraMod (fine-tuned): APNet protocol - default,0.07386163219496553,"(np.float64(0.029), np.float64(0.12))",20,9,0.0064363329293153065,,
+H-F1,cmx7,APNet (seed 0) - ShallowConvNet [APNet protocol],0.03012305595638928,"(np.float64(-0.028), np.float64(0.09))",16,13,0.5305874690871701,1.0,no significant difference
+H-F1,cmx7,"APNet (seed 0) - CBraMod (frozen, linear probe) [APNet protocol]",0.08030262946929614,"(np.float64(0.019), np.float64(0.144))",19,9,0.028811461269779036,0.11524584507911614,no significant difference
+H-F1,cmx7,APNet (seed 0) - EEG-Conformer [APNet protocol],0.01188231521564855,"(np.float64(-0.038), np.float64(0.067))",14,14,0.8643879403860739,1.0,no significant difference
+H-F1,cmx7,APNet (seed 0) - CBraMod (fine-tuned) [APNet protocol],0.060578002244668916,"(np.float64(-0.001), np.float64(0.125))",20,10,0.10200163430697945,0.30600490292093835,no significant difference
+H-F2 (descriptive),cog,ShallowConvNet: APNet protocol - default,0.0900383141762452,"(np.float64(0.048), np.float64(0.132))",20,6,0.0008334173433083084,,
+H-F2 (descriptive),cog,"CBraMod (frozen, linear probe): APNet protocol - default",0.044061302681992334,"(np.float64(0.002), np.float64(0.086))",16,9,0.07326526136051163,,
+H-F2 (descriptive),cog,EEG-Conformer: APNet protocol - default,0.05938697318007661,"(np.float64(0.015), np.float64(0.102))",20,7,0.02411419995095,,
+H-F2 (descriptive),cog,CBraMod (fine-tuned): APNet protocol - default,0.022988505747126423,"(np.float64(-0.036), np.float64(0.08))",16,11,0.45606630565663464,,
+H-F1,cog,APNet (seed 0) - ShallowConvNet [APNet protocol],-0.042145593869731796,"(np.float64(-0.075), np.float64(-0.01))",8,16,0.026514545889153054,0.07954363766745916,no significant difference
+H-F1,cog,"APNet (seed 0) - CBraMod (frozen, linear probe) [APNet protocol]",-0.007662835249042149,"(np.float64(-0.05), np.float64(0.033))",12,11,0.8786395912608947,1.0,no significant difference
+H-F1,cog,APNet (seed 0) - EEG-Conformer [APNet protocol],-0.038314176245210725,"(np.float64(-0.067), np.float64(-0.01))",7,16,0.012405485442994217,0.04962194177197687,recent model better
+H-F1,cog,APNet (seed 0) - CBraMod (fine-tuned) [APNet protocol],-0.003831417624521071,"(np.float64(-0.054), np.float64(0.044))",15,12,0.8658788440633872,1.0,no significant difference
