@@ -1,0 +1,9 @@
+dataset,comparison,mean_diff,wins,losses,p
+CMx7-MM,ShallowConvNet: APNet protocol - default,0.1305,25,5,0.0003
+CMx7-MM,"CBraMod (frozen, linear probe): APNet protocol - default",0.0004,15,15,0.6884
+CMx7-MM,EEG-Conformer: APNet protocol - default,0.1106,22,7,0.002
+CMx7-MM,CBraMod (fine-tuned): APNet protocol - default,0.0739,20,9,0.0064
+COG-BCI,ShallowConvNet: APNet protocol - default,0.09,20,6,0.0008
+COG-BCI,"CBraMod (frozen, linear probe): APNet protocol - default",0.0441,16,9,0.0733
+COG-BCI,EEG-Conformer: APNet protocol - default,0.0594,20,7,0.0241
+COG-BCI,CBraMod (fine-tuned): APNet protocol - default,0.023,16,11,0.4561

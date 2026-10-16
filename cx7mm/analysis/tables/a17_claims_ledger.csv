@@ -7,9 +7,12 @@ N1,TCAI helps under partial collinearity,"sweep H-S2: +0.019, p = 0.086",TREND O
 N1,TCAI improves accuracy on CMx7-MM / COG-BCI,pre-registered N1 tests not met on either dataset,NOT SUPPORTED
 N1,IG-TCAI is non-inferior to EEGNet on CMx7-MM,H-IG-NI met (p = 0.032),SUPPORTED
 APNet,Highest mean balanced accuracy on CMx7-MM,"seed 0 0.526, 3-seed 0.505; 3-seed ranks 1 among all other models",SUPPORTED (descriptive)
-APNet,Significantly better than recent models on CMx7-MM,"4/4 recent models, Holm p < 0.05 (post-hoc)",SUPPORTED (exploratory)
-APNet,Better than recent models on COG-BCI,"higher means, 0/4 significant",NOT SUPPORTED (means only)
-APNet,APNet's own components beat the same pipeline without them,COG-BCI -0.017 (p_holm = 0.93); CMx7-MM +0.016 (p_holm = 0.32),NOT SUPPORTED
+APNet,Better than recent models with their default training (CMx7-MM),"4/4 recent models, Holm p < 0.05 (post-hoc)","SUPPORTED, but see next row"
+APNet,"Better than recent models under the SAME protocol (CMx7-MM, COG-BCI)","H-F1: 0/8 comparisons favour APNet, 1/8 favour a recent model (EEG-Conformer, COG-BCI)",NOT SUPPORTED (withdrawn)
+Protocol,EA + AdaBN + SWA + score centring improves other architectures too,"H-F2: ShallowConvNet +0.13 / +0.09, EEG-Conformer +0.11 / +0.06 (CMx7-MM / COG-BCI)",SUPPORTED (descriptive)
+APNet,The locked recipe beats EEGNet on an unseen dataset (CONFIRMATORY),"Shin 2018: 0.615 vs 0.408, 24/26 participants, p = 6.9e-06 (H-E1)",SUPPORTED (pre-registered)
+APNet,3.6k-parameter APNet matches much larger recent models on the unseen dataset,"highest mean (rank 1); better than CBraMod probe and fine-tuned (Holm p < 0.05); not different from ShallowConvNet, EEG-Conformer (H-E3)",SUPPORTED (pre-registered)
+APNet,APNet's own components beat the same pipeline without them,COG-BCI -0.017 (p_holm = 0.93); CMx7-MM +0.016 (p_holm = 0.32); Shin H-E4 −0.005 (p = 0.46),NOT SUPPORTED
 Graph proposal,Dynamic sparse graphs + adversaries improve on a compact CNN,best graph model 0.424 vs EEGNet 0.452 (same run); full proposals near chance,NOT SUPPORTED (led to APNet)
 Graph proposal,Learned graphs reflect workload,largest high-vs-low edge change 0.0128; features identify the person (probe 0.82),NOT SUPPORTED
 XAI,Explanations pass sanity checks (randomisation + deletion),pre-registered run failed for aligned models; amendment passes for APNet on both datasets,SUPPORTED (exploratory amendment)

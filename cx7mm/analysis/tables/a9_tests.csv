@@ -1,0 +1,8 @@
+test,comparison,mean_diff,wins,losses,alternative,p_final,verdict
+H-E1 (primary),APNet (seed 0) - EEGNet (seed 0),0.2078,24,1,greater,1e-05,SUPPORTED / APNet better
+H-E2,APNet (seed 0) - chance,0.28205,26,0,greater,0.0,SUPPORTED / APNet better
+H-E3,APNet (seed 0) - ShallowConvNet [APNet protocol],0.00659,12,10,two-sided,0.55711,not significant
+H-E3,"APNet (seed 0) - CBraMod, linear probe [APNet protocol]",0.08494,19,2,two-sided,0.00243,SUPPORTED / APNet better
+H-E3,APNet (seed 0) - EEG-Conformer [APNet protocol],0.02813,13,9,two-sided,0.33396,not significant
+H-E3,"APNet (seed 0) - CBraMod, fine-tuned [APNet protocol]",0.06375,18,6,two-sided,0.01957,SUPPORTED / APNet better
+H-E4,APNet (3-seed) - EEGNet + EA + AdaBN [SWA] (3-seed),-0.00499,11,12,two-sided,0.4624,not significant

@@ -2,6 +2,6 @@ problem,evidence,what we changed,result
 1 Graph models below a small CNN,best graph model 0.424 vs EEGNet 0.452 with ≈23× more parameters,"Switched the backbone to EEGNet (3,595 parameters)",APNet 0.526 (seed 0) on CMx7-MM
 2 One class for a whole person,graph v1 / v2: 17 / 12 of 30 subjects,Euclidean alignment per subject + test-time AdaBN + subject-wise score centring,APNet: 0 (CMx7-MM) and 0 (COG-BCI) one-class subjects
 3 Validation did not predict test,"validation 0.43–0.48 for all stages, test 0.32–0.45; Spearman ρ(validation, test) = -0.00",No epoch picking: fixed 20 epochs + weight averaging (SWA) + 3 seeds,"+0.021 (CMx7-MM), +0.034 (COG-BCI) over the same model with early stopping"
-4 Features identify the person,person probe 0.82 (chance 0.25); the subject adversary did not remove it,Align each person's data (EA) instead of an adversary,"explanations far more consistent across people: +0.34 (COG-BCI), +0.14 (CMx7-MM) vs EEGNet (A14 Q5)"
+4 Features identify the person,person probe 0.82 (chance 0.25); the subject adversary did not remove it,Align each person's data (EA) instead of an adversary,"explanations far more consistent across people: +0.34 (COG-BCI), +0.14 (CMx7-MM) vs EEGNet (A16 Q5)"
 5 Task adversary hurt,adding TCAI to the graph model: Δ -0.087 (p = 0.001),Scale the adversary by (1 − TLCI): IG-TCAI,"IG-TCAI non-inferior to EEGNet on CMx7-MM (H-IG-NI, p = 0.032)"
-6 Graphs do not change with workload,largest edge change high vs low = 0.0128,Dropped the graph-interpretation claim; explain with IG + occlusion behind sanity gates,XAI section A14
+6 Graphs do not change with workload,largest edge change high vs low = 0.0128,Dropped the graph-interpretation claim; explain with IG + occlusion behind sanity gates,XAI section A16
