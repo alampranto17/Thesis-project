@@ -1,0 +1,14 @@
+{
+  "dataset": "cog",
+  "key": "f_shallow@2000",
+  "fold_id": "loso_11",
+  "val_bal_acc": 0.4583333333333333,
+  "val_bal_acc_center": 0.5416666666666666,
+  "train_loss_first": 1.2772132710174278,
+  "train_loss_last": 0.7901800997831203,
+  "labels_changed_by_permutation": 0.0,
+  "bn_layers": 1,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-17T22:40:07.007722+00:00"
+}
