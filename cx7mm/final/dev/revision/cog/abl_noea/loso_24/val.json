@@ -1,0 +1,14 @@
+{
+  "dataset": "cog",
+  "key": "abl_noea",
+  "fold_id": "loso_24",
+  "val_bal_acc": 0.5277777777777778,
+  "val_bal_acc_center": 0.5138888888888888,
+  "train_loss_first": 2.1310201750861273,
+  "train_loss_last": 1.9649540174890447,
+  "labels_changed_by_permutation": 0.0,
+  "bn_layers": 3,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-17T15:18:14.736273+00:00"
+}
