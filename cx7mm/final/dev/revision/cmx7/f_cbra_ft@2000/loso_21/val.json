@@ -1,0 +1,14 @@
+{
+  "dataset": "cmx7",
+  "key": "f_cbra_ft@2000",
+  "fold_id": "loso_21",
+  "val_bal_acc": 0.3715617715617716,
+  "val_bal_acc_center": 0.5265734265734267,
+  "train_loss_first": 1.0544784455387681,
+  "train_loss_last": 0.6151368104749255,
+  "labels_changed_by_permutation": 0.0,
+  "bn_layers": 0,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-17T21:46:12.713021+00:00"
+}
