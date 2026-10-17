@@ -1,0 +1,14 @@
+{
+  "dataset": "cmx7",
+  "key": "abl_noea",
+  "fold_id": "loso_12",
+  "val_bal_acc": 0.46015325670498086,
+  "val_bal_acc_center": 0.4509578544061303,
+  "train_loss_first": 3.32490974718386,
+  "train_loss_last": 2.5199023581839897,
+  "labels_changed_by_permutation": 0.0,
+  "bn_layers": 3,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-17T13:59:49.131370+00:00"
+}
