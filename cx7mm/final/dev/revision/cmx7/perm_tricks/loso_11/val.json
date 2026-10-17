@@ -1,0 +1,14 @@
+{
+  "dataset": "cmx7",
+  "key": "perm_tricks",
+  "fold_id": "loso_11",
+  "val_bal_acc": 0.43943943943943947,
+  "val_bal_acc_center": 0.46991991991991994,
+  "train_loss_first": 1.10771283948863,
+  "train_loss_last": 0.9515163578368999,
+  "labels_changed_by_permutation": 0.3851508120649652,
+  "bn_layers": 3,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-17T13:12:52.361952+00:00"
+}

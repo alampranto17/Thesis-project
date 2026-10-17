@@ -1,0 +1,14 @@
+{
+  "dataset": "cmx7",
+  "key": "perm_apnet",
+  "fold_id": "loso_17",
+  "val_bal_acc": 0.41914335664335667,
+  "val_bal_acc_center": 0.405011655011655,
+  "train_loss_first": 3.3497606175286427,
+  "train_loss_last": 2.57236071569579,
+  "labels_changed_by_permutation": 0.33408071748878926,
+  "bn_layers": 3,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-17T12:54:35.166701+00:00"
+}
