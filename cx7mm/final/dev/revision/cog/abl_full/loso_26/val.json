@@ -1,0 +1,14 @@
+{
+  "dataset": "cog",
+  "key": "abl_full",
+  "fold_id": "loso_26",
+  "val_bal_acc": 0.5972222222222222,
+  "val_bal_acc_center": 0.5972222222222222,
+  "train_loss_first": 2.130607525507609,
+  "train_loss_last": 1.9241822946954656,
+  "labels_changed_by_permutation": 0.0,
+  "bn_layers": 3,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-17T14:57:57.797753+00:00"
+}
