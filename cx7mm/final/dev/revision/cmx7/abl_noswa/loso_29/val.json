@@ -1,0 +1,15 @@
+{
+  "dataset": "cmx7",
+  "key": "abl_noswa",
+  "fold_id": "loso_29",
+  "val_bal_acc": 0.4119162640901772,
+  "val_bal_acc_center": 0.37362318840579706,
+  "train_loss_first": 3.36081341681657,
+  "train_loss_last": 2.587772334063495,
+  "labels_changed_by_permutation": 0.0,
+  "bn_layers": 3,
+  "epochs": 11,
+  "best_epoch": 3,
+  "best_val_no_adabn": 0.4651207729468599,
+  "finished_utc": "2026-10-17T14:33:14.568182+00:00"
+}
