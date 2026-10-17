@@ -1,0 +1,17 @@
+dataset,variant,mean,ci,one_class_subjects
+cmx7,APNet re-run (all components),0.547298380631714,"(np.float64(0.502), np.float64(0.594))",0.0
+cmx7,- EA (z-score input),0.497269520602854,"(np.float64(0.435), np.float64(0.557))",0.0
+cmx7,- SWA (early stopping),0.4500080166746834,"(np.float64(0.389), np.float64(0.509))",0.0
+cmx7,- test-time AdaBN,0.5249001924001925,"(np.float64(0.474), np.float64(0.575))",0.0
+cmx7,- subject-wise centring,0.4982515632515633,"(np.float64(0.456), np.float64(0.542))",0.0
+cmx7,"fully inductive (no EA, no AdaBN, no centring)",0.40647146063812734,"(np.float64(0.36), np.float64(0.46))",10.0
+cmx7,"APNet (locked, seed 0)",0.5258561808561809,"(np.float64(0.48), np.float64(0.573))",0.0
+cmx7,EEGNet (FINAL run),0.42807679974346635,"(np.float64(0.376), np.float64(0.48))",
+cog,APNet re-run (all components),0.5478927203065133,"(np.float64(0.513), np.float64(0.58))",0.0
+cog,- EA (z-score input),0.5478927203065133,"(np.float64(0.517), np.float64(0.577))",0.0
+cog,- SWA (early stopping),0.528735632183908,"(np.float64(0.5), np.float64(0.559))",0.0
+cog,- test-time AdaBN,0.5306513409961685,"(np.float64(0.496), np.float64(0.565))",0.0
+cog,- subject-wise centring,0.5440613026819923,"(np.float64(0.506), np.float64(0.58))",0.0
+cog,"fully inductive (no EA, no AdaBN, no centring)",0.47126436781609193,"(np.float64(0.427), np.float64(0.517))",2.0
+cog,"APNet (locked, seed 0)",0.5421455938697318,"(np.float64(0.508), np.float64(0.579))",0.0
+cog,EEGNet (FINAL run),0.47509578544061304,"(np.float64(0.441), np.float64(0.513))",
