@@ -1,0 +1,202 @@
+{
+  "rule": {
+    "status": "post-hoc revision analyses requested by a simulated pre-submission review (17 Oct 2026); designed after all earlier results were known; exploratory; APNet and all earlier runs unchanged; every outcome reported",
+    "specs": {
+      "perm_apnet": {
+        "family": "perm",
+        "base": "d_v3_ls",
+        "recent": null,
+        "mode": "ea",
+        "sched": "swa",
+        "perm": true,
+        "seed": 0,
+        "datasets": [
+          "cmx7"
+        ]
+      },
+      "perm_tricks": {
+        "family": "perm",
+        "base": "d_tricks",
+        "recent": null,
+        "mode": "ea",
+        "sched": "swa",
+        "perm": true,
+        "seed": 0,
+        "datasets": [
+          "cmx7"
+        ]
+      },
+      "abl_full": {
+        "family": "ablation",
+        "base": "d_v3_ls",
+        "recent": null,
+        "mode": "ea",
+        "sched": "swa",
+        "perm": false,
+        "seed": 0,
+        "datasets": [
+          "cmx7",
+          "cog"
+        ]
+      },
+      "abl_noea": {
+        "family": "ablation",
+        "base": "d_v3_ls",
+        "recent": null,
+        "mode": "train_global",
+        "sched": "swa",
+        "perm": false,
+        "seed": 0,
+        "datasets": [
+          "cmx7",
+          "cog"
+        ]
+      },
+      "abl_noswa": {
+        "family": "ablation",
+        "base": "d_v3_ls",
+        "recent": null,
+        "mode": "ea",
+        "sched": "early",
+        "perm": false,
+        "seed": 0,
+        "datasets": [
+          "cmx7",
+          "cog"
+        ]
+      },
+      "f_shallow@1000": {
+        "family": "seeds",
+        "base": null,
+        "recent": "f_shallow",
+        "mode": "ea",
+        "sched": "swa",
+        "perm": false,
+        "seed": 1000,
+        "datasets": [
+          "cmx7",
+          "cog"
+        ]
+      },
+      "f_shallow@2000": {
+        "family": "seeds",
+        "base": null,
+        "recent": "f_shallow",
+        "mode": "ea",
+        "sched": "swa",
+        "perm": false,
+        "seed": 2000,
+        "datasets": [
+          "cmx7",
+          "cog"
+        ]
+      },
+      "f_cbra_probe@1000": {
+        "family": "seeds",
+        "base": null,
+        "recent": "f_cbra_probe",
+        "mode": "ea",
+        "sched": "swa",
+        "perm": false,
+        "seed": 1000,
+        "datasets": [
+          "cmx7",
+          "cog"
+        ]
+      },
+      "f_cbra_probe@2000": {
+        "family": "seeds",
+        "base": null,
+        "recent": "f_cbra_probe",
+        "mode": "ea",
+        "sched": "swa",
+        "perm": false,
+        "seed": 2000,
+        "datasets": [
+          "cmx7",
+          "cog"
+        ]
+      },
+      "f_conformer@1000": {
+        "family": "seeds",
+        "base": null,
+        "recent": "f_conformer",
+        "mode": "ea",
+        "sched": "swa",
+        "perm": false,
+        "seed": 1000,
+        "datasets": [
+          "cmx7",
+          "cog"
+        ]
+      },
+      "f_conformer@2000": {
+        "family": "seeds",
+        "base": null,
+        "recent": "f_conformer",
+        "mode": "ea",
+        "sched": "swa",
+        "perm": false,
+        "seed": 2000,
+        "datasets": [
+          "cmx7",
+          "cog"
+        ]
+      },
+      "f_cbra_ft@1000": {
+        "family": "seeds",
+        "base": null,
+        "recent": "f_cbra_ft",
+        "mode": "ea",
+        "sched": "swa",
+        "perm": false,
+        "seed": 1000,
+        "datasets": [
+          "cmx7",
+          "cog"
+        ]
+      },
+      "f_cbra_ft@2000": {
+        "family": "seeds",
+        "base": null,
+        "recent": "f_cbra_ft",
+        "mode": "ea",
+        "sched": "swa",
+        "perm": false,
+        "seed": 2000,
+        "datasets": [
+          "cmx7",
+          "cog"
+        ]
+      }
+    },
+    "training": {
+      "swa": "20 epochs, average of the last 8 (as APNet)",
+      "early": "early stopping on validation balanced accuracy, at most 30 epochs, patience 6 (as the FINAL run)",
+      "ea": "input = R^-1/2 of the subject's label-free mean covariance (as APNet)",
+      "train_global": "input z-scored with training-fold statistics (no alignment)",
+      "seed_formula": "random_seed + fold index + seed_offset + seed (as APNet's seeds)",
+      "recent_models": "exactly the F.2 protocol of the same-protocol comparison, with the seed added"
+    },
+    "permutation": {
+      "what": "in each CMx7-MM fold, the (rating, label) pairs of the TRAINING recordings are shuffled among recordings of the same task; validation and test recordings are unchanged",
+      "perm_seed": 4242
+    },
+    "test_time": {
+      "saved": "every model writes two sealed files: with test-time AdaBN (sealed_test.parquet) and without (sealed_test_noadabn.parquet)",
+      "options": "fixed now, no selection: APNet variants use APNet's locked option per dataset ({'cmx7': 'center', 'cog': 'center'}); permuted EEGNet + EA + AdaBN [SWA] uses its locked option ({'cmx7': 'center', 'cog': 'none'}); the -centring variant uses 'none'; recent models use the options locked in fair_lock.json for seed 0 ({'f_cbra_ft': {'cmx7': 'center', 'cog': 'center'}, 'f_cbra_probe': {'cmx7': 'center', 'cog': 'center'}, 'f_conformer': {'cmx7': 'center', 'cog': 'center'}, 'f_shallow': {'cmx7': 'center', 'cog': 'center'}})"
+    },
+    "tests": {
+      "H-R1 (M2)": "CMx7-MM: APNet (locked, seed 0) > APNet trained on within-task permuted labels (seed 0); one-sided Wilcoxon over the 30 held-out subjects, alpha 0.05. Reading: if not met, APNet's accuracy does not depend on within-task information",
+      "H-R1b": "same for EEGNet + EA + AdaBN [SWA] (secondary)",
+      "R1-desc": "pooled within-task Spearman rho of the expected level vs the rating, averaged over the 5 eligible tasks, true vs permuted, bootstrap CI over subjects; within-task balanced accuracy per task",
+      "H-R2 (M1)": "per dataset: APNet re-run (abl_full) vs each leave-one-out variant (-EA, -SWA, -AdaBN, -centring); two-sided Wilcoxon over held-out subjects, Holm over the 4 variants within the dataset",
+      "R2-desc": "fully inductive variant (no EA, no test-time AdaBN, no centring; SWA kept) vs EEGNet (FINAL run) and vs the re-run; re-run vs locked APNet (reproducibility); one-class subjects of every variant",
+      "H-R3 (M4)": "per dataset: APNet (3-seed) vs each recent model under APNet's protocol (3-seed ensemble); two-sided Wilcoxon, Holm over the 4 recent models within the dataset",
+      "R3-desc": "per-seed fold means and their SD for APNet, EEGNet + EA + AdaBN [SWA] and every recent model",
+      "R5-desc": "argmax-only ('none') and centred results for every protocol model (no training; addresses the transductive-test question)"
+    },
+    "sealing": "RV.3 hashes every sealed file of a family when the family is complete; RV.4 verifies the hashes before reading"
+  },
+  "saved_utc": "2026-10-17T12:39:38.879066+00:00"
+}
