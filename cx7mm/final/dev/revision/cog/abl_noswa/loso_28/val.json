@@ -1,0 +1,15 @@
+{
+  "dataset": "cog",
+  "key": "abl_noswa",
+  "fold_id": "loso_28",
+  "val_bal_acc": 0.5416666666666666,
+  "val_bal_acc_center": 0.5277777777777778,
+  "train_loss_first": 2.132519170090004,
+  "train_loss_last": 1.9317828405786444,
+  "labels_changed_by_permutation": 0.0,
+  "bn_layers": 3,
+  "epochs": 16,
+  "best_epoch": 8,
+  "best_val_no_adabn": 0.5555555555555556,
+  "finished_utc": "2026-10-17T15:47:31.080960+00:00"
+}
