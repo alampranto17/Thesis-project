@@ -1,0 +1,14 @@
+{
+  "dataset": "cog",
+  "key": "f_conformer@2000",
+  "fold_id": "loso_00",
+  "val_bal_acc": 0.5833333333333334,
+  "val_bal_acc_center": 0.5416666666666666,
+  "train_loss_first": 1.113751075885914,
+  "train_loss_last": 0.8532599028613832,
+  "labels_changed_by_permutation": 0.0,
+  "bn_layers": 1,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-18T08:23:23.275239+00:00"
+}
