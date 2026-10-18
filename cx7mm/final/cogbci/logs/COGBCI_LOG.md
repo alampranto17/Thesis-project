@@ -46,3 +46,4 @@ FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/working/final/c
 RuntimeError: DataLoader timed out after 300 seconds
 
 - 2026-10-17T12:33:02.475647+00:00 [E2] 522 recordings, 29 subjects
+- 2026-10-18T06:20:33.778555+00:00 [E2] 522 recordings, 29 subjects
