@@ -1,0 +1,14 @@
+{
+  "dataset": "cog",
+  "key": "f_cbra_ft@2000",
+  "fold_id": "loso_21",
+  "val_bal_acc": 0.47222222222222215,
+  "val_bal_acc_center": 0.5277777777777778,
+  "train_loss_first": 1.0642064302055925,
+  "train_loss_last": 0.8010086660031919,
+  "labels_changed_by_permutation": 0.0,
+  "bn_layers": 0,
+  "epochs": 20,
+  "averaged": 8,
+  "finished_utc": "2026-10-18T11:26:44.973804+00:00"
+}
